@@ -1,0 +1,1770 @@
+{
+  "2302.00058": {
+    "id": "2302.00058",
+    "year": "2023",
+    "title": "Graph Anomaly Detection in Time Series: A Survey",
+    "authors": [
+      "Thi Kieu Khanh Ho",
+      "Ali Karami",
+      "Narges Armanfard"
+    ],
+    "abstract": "With the recent advances in technology, a wide range of systems continue to collect a large amount of data over time and thus generate time series. Time-Series Anomaly Detection (TSAD) is an important task in various time-series applications such as e-commerce, cybersecurity, vehicle maintenance, and healthcare monitoring. However, this task is very challenging as it requires considering both the ",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2308.00393": {
+    "id": "2308.00393",
+    "year": "2023",
+    "title": "A Survey of Time Series Anomaly Detection Methods in the AIOps Domain",
+    "authors": [
+      "Zhenyu Zhong",
+      "Qiliang Fan",
+      "Jiacheng Zhang",
+      "Minghua Ma",
+      "Shenglin Zhang",
+      "Yongqian Sun"
+    ],
+    "abstract": "Internet-based services have seen remarkable success, generating vast amounts of monitored key performance indicators (KPIs) as univariate or multivariate time series. Monitoring and analyzing these time series are crucial for researchers, service operators, and on-call engineers to detect outliers or anomalies indicating service failures or significant events. Numerous advanced anomaly detection ",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2002.04236": {
+    "id": "2002.04236",
+    "year": "2020",
+    "title": "A review on outlier/anomaly detection in time series data",
+    "authors": [
+      "Ane Blázquez-García",
+      "Angel Conde",
+      "Usue Mori",
+      "Jose A. Lozano"
+    ],
+    "abstract": "Recent advances in technology have brought major breakthroughs in data collection, enabling a large amount of data to be gathered over time and thus generating time series. Mining this data has become an important task for researchers and practitioners in the past few years, including the detection of outliers or anomalies that may represent errors or events of interest. This review aims to provid",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2107.08835": {
+    "id": "2107.08835",
+    "year": "2021",
+    "title": "Time Series Anomaly Detection for Smart Grids: A Survey",
+    "authors": [
+      "Jiuqi Elise Zhang",
+      "Di Wu",
+      "Benoit Boulet"
+    ],
+    "abstract": "With the rapid increase in the integration of renewable energy generation and the wide adoption of various electric appliances, power grids are now faced with more and more challenges. One prominent challenge is to implement efficient anomaly detection for different types of anomalous behaviors within power grids. These anomalous behaviors might be induced by unusual consumption patterns of the us",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2307.03759": {
+    "id": "2307.03759",
+    "year": "2023",
+    "title": "A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection",
+    "authors": [
+      "Ming Jin",
+      "Huan Yee Koh",
+      "Qingsong Wen",
+      "Daniele Zambon",
+      "Cesare Alippi",
+      "Geoffrey I. Webb"
+    ],
+    "abstract": "Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for t",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2501.15196": {
+    "id": "2501.15196",
+    "year": "2025",
+    "title": "A Review on Self-Supervised Learning for Time Series Anomaly Detection: Recent Advances and Open Challenges",
+    "authors": [
+      "Aitor Sánchez-Ferrera",
+      "Borja Calvo",
+      "Jose A. Lozano"
+    ],
+    "abstract": "Time series anomaly detection presents various challenges due to the sequential and dynamic nature of time-dependent data. Traditional unsupervised methods frequently encounter difficulties in generalization, often overfitting to known normal patterns observed during training and struggling to adapt to unseen normality. In response to this limitation, self-supervised techniques for time series hav",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2409.07505": {
+    "id": "2409.07505",
+    "year": "2024",
+    "title": "A Survey of Anomaly Detection in In-Vehicle Networks",
+    "authors": [
+      "Övgü Özdemir",
+      "M. Tuğberk İşyapar",
+      "Pınar Karagöz",
+      "Klaus Werner Schmidt",
+      "Demet Demir",
+      "N. Alpay Karagöz"
+    ],
+    "abstract": "Modern vehicles are equipped with Electronic Control Units (ECU) that are used for controlling important vehicle functions including safety-critical operations. ECUs exchange information via in-vehicle communication buses, of which the Controller Area Network (CAN bus) is by far the most widespread representative. Problems that may occur in the vehicle's physical parts or malicious attacks may cau",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2010.14946": {
+    "id": "2010.14946",
+    "year": "2020",
+    "title": "Smart Anomaly Detection in Sensor Systems: A Multi-Perspective Review",
+    "authors": [
+      "L. Erhan",
+      "M. Ndubuaku",
+      "M. Di Mauro",
+      "W. Song",
+      "M. Chen",
+      "G. Fortino"
+    ],
+    "abstract": "Anomaly detection is concerned with identifying data patterns that deviate remarkably from the expected behaviour. This is an important research problem, due to its broad set of application domains, from data analysis to e-health, cybersecurity, predictive maintenance, fault prevention, and industrial automation. Herein, we review state-of-the-art methods that may be employed to detect anomalies i",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2501.11430": {
+    "id": "2501.11430",
+    "year": "2025",
+    "title": "A Survey on Diffusion Models for Anomaly Detection",
+    "authors": [
+      "Jing Liu",
+      "Zhenchao Ma",
+      "Zepu Wang",
+      "Chenxuanyin Zou",
+      "Jiayang Ren",
+      "Zehua Wang"
+    ],
+    "abstract": "Diffusion models (DMs) have emerged as a powerful class of generative AI models, showing remarkable potential in anomaly detection (AD) tasks across various domains, such as cybersecurity, fraud detection, healthcare, and manufacturing. The intersection of these two fields, termed diffusion models for anomaly detection (DMAD), offers promising solutions for identifying deviations in increasingly c",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2403.10802": {
+    "id": "2403.10802",
+    "year": "2024",
+    "title": "Anomaly Detection Based on Isolation Mechanisms: A Survey",
+    "authors": [
+      "Yang Cao",
+      "Haolong Xiang",
+      "Hang Zhang",
+      "Ye Zhu",
+      "Kai Ming Ting"
+    ],
+    "abstract": "Anomaly detection is a longstanding and active research area that has many applications in domains such as finance, security, and manufacturing. However, the efficiency and performance of anomaly detection algorithms are challenged by the large-scale, high-dimensional, and heterogeneous data that are prevalent in the era of big data. Isolation-based unsupervised anomaly detection is a novel and ef",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2407.18439": {
+    "id": "2407.18439",
+    "year": "2024",
+    "title": "Impact of Recurrent Neural Networks and Deep Learning Frameworks on Real-time Lightweight Time Series Anomaly Detection",
+    "authors": [
+      "Ming-Chang Lee",
+      "Jia-Chun Lin",
+      "Sokratis Katsikas"
+    ],
+    "abstract": "Real-time lightweight time series anomaly detection has become increasingly crucial in cybersecurity and many other domains. Its ability to adapt to unforeseen pattern changes and swiftly identify anomalies enables prompt responses and critical decision-making. While several such anomaly detection approaches have been introduced in recent years, they primarily utilize a single type of recurrent ne",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2603.18941": {
+    "id": "2603.18941",
+    "year": "2026",
+    "title": "Unified Taxonomy for Multivariate Time Series Anomaly Detection using Deep Learning",
+    "authors": [
+      "Bruna Alves",
+      "Armando J. Pinho",
+      "Sónia Gouveia"
+    ],
+    "abstract": "The topic of Multivariate Time Series Anomaly Detection (MTSAD) has grown rapidly over the past years, with a steady rise in publications and Deep Learning (DL) models becoming the dominant paradigm. To address the lack of systematization in the field, this study introduces a novel and unified taxonomy with eleven dimensions over three parts (Input, Output and Model) for the categorization of DL-b",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2509.18123": {
+    "id": "2509.18123",
+    "year": "2025",
+    "title": "SPADE: A Large Language Model Framework for Soil Moisture Pattern Recognition and Anomaly Detection in Precision Agriculture",
+    "authors": [
+      "Yeonju Lee",
+      "Rui Qi Chen",
+      "Joseph Oboamah",
+      "Po Nien Su",
+      "Wei-zhen Liang",
+      "Yeyin Shi"
+    ],
+    "abstract": "Accurate interpretation of soil moisture patterns is critical for irrigation scheduling and crop management, yet existing approaches for soil moisture time-series analysis either rely on threshold-based rules or data-hungry machine learning or deep learning models that are limited in adaptability and interpretability. In this study, we propose SPADE (Soil moisture Pattern and Anomaly DEtection), w",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2411.00914": {
+    "id": "2411.00914",
+    "year": "2024",
+    "title": "AAD-LLM: Adaptive Anomaly Detection Using Large Language Models",
+    "authors": [
+      "Alicia Russell-Gilbert",
+      "Alexander Sommers",
+      "Andrew Thompson",
+      "Logan Cummins",
+      "Sudip Mittal",
+      "Shahram Rahimi"
+    ],
+    "abstract": "For data-constrained, complex and dynamic industrial environments, there is a critical need for transferable and multimodal methodologies to enhance anomaly detection and therefore, prevent costs associated with system failures. Typically, traditional PdM approaches are not transferable or multimodal. This work examines the use of Large Language Models (LLMs) for anomaly detection in complex and d",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2506.09368": {
+    "id": "2506.09368",
+    "year": "2025",
+    "title": "Anomaly Detection and Generation with Diffusion Models: A Survey",
+    "authors": [
+      "Yang Liu",
+      "Jing Liu",
+      "Chengfang Li",
+      "Rui Xi",
+      "Wenchao Li",
+      "Liang Cao"
+    ],
+    "abstract": "Anomaly detection (AD) plays a pivotal role across diverse domains, including cybersecurity, finance, healthcare, and industrial manufacturing, by identifying unexpected patterns that deviate from established norms in real-world data. Recent advancements in deep learning, specifically diffusion models (DMs), have sparked significant interest due to their ability to learn complex data distributions",
+    "query": "ti:\"anomaly detection\" AND abs:\"time series\" AND abs:\"review\""
+  },
+  "2501.18196": {
+    "id": "2501.18196",
+    "year": "2025",
+    "title": "GDformer: Going Beyond Subsequence Isolation for Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Qingxiang Liu",
+      "Xiaoliang Luo",
+      "Chenghao Liu",
+      "Sheng Sun",
+      "Di Yao",
+      "Lvchun Wang"
+    ],
+    "abstract": "Unsupervised anomaly detection of multivariate time series is a challenging task, given the requirements of deriving a compact detection criterion without accessing the anomaly points. The existing methods are mainly based on reconstruction error or association divergence, which are both confined to isolated subsequences with limited horizons, hardly promising unified series-level criterion. In th",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2503.23060": {
+    "id": "2503.23060",
+    "year": "2025",
+    "title": "Unsupervised Anomaly Detection in Multivariate Time Series across Heterogeneous Domains",
+    "authors": [
+      "Vincent Jacob",
+      "Yanlei Diao"
+    ],
+    "abstract": "The widespread adoption of digital services, along with the scale and complexity at which they operate, has made incidents in IT operations increasingly more likely, diverse, and impactful. This has led to the rapid development of a central aspect of \"Artificial Intelligence for IT Operations\" (AIOps), focusing on detecting anomalies in vast amounts of multivariate time series data generated by se",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2204.01637": {
+    "id": "2204.01637",
+    "year": "2022",
+    "title": "Do Deep Neural Networks Contribute to Multivariate Time Series Anomaly Detection?",
+    "authors": [
+      "Julien Audibert",
+      "Pietro Michiardi",
+      "Frédéric Guyard",
+      "Sébastien Marti",
+      "Maria A. Zuluaga"
+    ],
+    "abstract": "Anomaly detection in time series is a complex task that has been widely studied. In recent years, the ability of unsupervised anomaly detection algorithms has received much attention. This trend has led researchers to compare only learning-based methods in their articles, abandoning some more conventional approaches. As a result, the community in this field has been encouraged to propose increasin",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2105.12818": {
+    "id": "2105.12818",
+    "year": "2021",
+    "title": "Anomaly Detection in Predictive Maintenance: A New Evaluation Framework for Temporal Unsupervised Anomaly Detection Algorithms",
+    "authors": [
+      "Jacinto Carrasco",
+      "Irina Markova",
+      "David López",
+      "Ignacio Aguilera",
+      "Diego García",
+      "Marta García-Barzana"
+    ],
+    "abstract": "The research in anomaly detection lacks a unified definition of what represents an anomalous instance. Discrepancies in the nature itself of an anomaly lead to multiple paradigms of algorithms design and experimentation. Predictive maintenance is a special case, where the anomaly represents a failure that must be prevented. Related time-series research as outlier and novelty detection or time-seri",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2609.29194": {
+    "id": "2609.29194",
+    "year": "2026",
+    "title": "Continuous Online Fault Detection for Mobile Robots via Adaptive Edge Models",
+    "authors": [
+      "Jordan Levy",
+      "Nicolas Verstaevel",
+      "Vincent Talon",
+      "Benoit Gaudou"
+    ],
+    "abstract": "Mobile robots require robust, real-time fault detection capable of continuous adaptation on constrained edge hardware. While deep time-series models excel at unsupervised anomaly detection, their computational cost prohibits high-frequency onboard execution. This paper bridges this gap via a Teacher-Student distillation framework. An offline foundation model (TSPulse) generates pseudo-labels from ",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2212.11080": {
+    "id": "2212.11080",
+    "year": "2022",
+    "title": "Is it worth it? Comparing six deep and classical methods for unsupervised anomaly detection in time series",
+    "authors": [
+      "Ferdinand Rewicki",
+      "Joachim Denzler",
+      "Julia Niebling"
+    ],
+    "abstract": "Detecting anomalies in time series data is important in a variety of fields, including system monitoring, healthcare, and cybersecurity. While the abundance of available methods makes it difficult to choose the most appropriate method for a given application, each method has its strengths in detecting certain types of anomalies. In this study, we compare six unsupervised anomaly detection methods ",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2508.00047": {
+    "id": "2508.00047",
+    "year": "2025",
+    "title": "TriP-LLM: A Tri-Branch Patch-wise Large Language Model Framework for Time-Series Anomaly Detection",
+    "authors": [
+      "Yuan-Cheng Yu",
+      "Yen-Chieh Ouyang",
+      "Chun-An Lin"
+    ],
+    "abstract": "Time-series anomaly detection plays a central role across a wide range of application domains. With the increasing proliferation of the Internet of Things (IoT) and smart manufacturing, time-series data has dramatically increased in both scale and dimensionality. This growth has exposed the limitations of traditional statistical methods in handling the high heterogeneity and complexity of such dat",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2009.07769": {
+    "id": "2009.07769",
+    "year": "2020",
+    "title": "TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks",
+    "authors": [
+      "Alexander Geiger",
+      "Dongyu Liu",
+      "Sarah Alnegheimish",
+      "Alfredo Cuesta-Infante",
+      "Kalyan Veeramachaneni"
+    ],
+    "abstract": "Time series anomalies can offer information relevant to critical situations facing various fields, from finance and aerospace to the IT, security, and medical domains. However, detecting anomalies in time series data is particularly challenging due to the vague definition of anomalies and said data's frequent lack of labels and highly complex temporal correlations. Current state-of-the-art unsuper",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2408.03747": {
+    "id": "2408.03747",
+    "year": "2024",
+    "title": "Online Model-based Anomaly Detection in Multivariate Time Series: Taxonomy, Survey, Research Challenges and Future Directions",
+    "authors": [
+      "Lucas Correia",
+      "Jan-Christoph Goos",
+      "Philipp Klein",
+      "Thomas Bäck",
+      "Anna V. Kononova"
+    ],
+    "abstract": "Time-series anomaly detection plays an important role in engineering processes, like development, manufacturing and other operations involving dynamic systems. These processes can greatly benefit from advances in the field, as state-of-the-art approaches may aid in cases involving, for example, highly dimensional data. To provide the reader with understanding of the terminology, this survey introd",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2301.03470": {
+    "id": "2301.03470",
+    "year": "2023",
+    "title": "Unsupervised Multivariate Time-Series Transformers for Seizure Identification on EEG",
+    "authors": [
+      "İlkay Yıldız Potter",
+      "George Zerveas",
+      "Carsten Eickhoff",
+      "Dominique Duncan"
+    ],
+    "abstract": "Epilepsy is one of the most common neurological disorders, typically observed via seizure episodes. Epileptic seizures are commonly monitored through electroencephalogram (EEG) recordings due to their routine and low expense collection. The stochastic nature of EEG makes seizure identification via manual inspections performed by highly-trained experts a tedious endeavor, motivating the use of auto",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2312.11549": {
+    "id": "2312.11549",
+    "year": "2023",
+    "title": "Label-Free Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Qihang Zhou",
+      "Shibo He",
+      "Haoyu Liu",
+      "Jiming Chen",
+      "Wenchao Meng"
+    ],
+    "abstract": "Anomaly detection in multivariate time series (MTS) has been widely studied in one-class classification (OCC) setting. The training samples in OCC are assumed to be normal, which is difficult to guarantee in practical situations. Such a case may degrade the performance of OCC-based anomaly detection methods which fit the training distribution as the normal distribution. In this paper, we propose M",
+    "query": "abs:\"unsupervised anomaly detection\" AND abs:\"time series\" AND abs:\"benchmark\""
+  },
+  "2310.14790": {
+    "id": "2310.14790",
+    "year": "2023",
+    "title": "Weighted Joint Maximum Mean Discrepancy Enabled Multi-Source-Multi-Target Unsupervised Domain Adaptation Fault Diagnosis",
+    "authors": [
+      "Zixuan Wang",
+      "Haoran Tang",
+      "Haibo Wang",
+      "Bo Qin",
+      "Mark D. Butala",
+      "Weiming Shen"
+    ],
+    "abstract": "Despite the remarkable results that can be achieved by data-driven intelligent fault diagnosis techniques, they presuppose the same distribution of training and test data as well as sufficient labeled data. Various operating states often exist in practical scenarios, leading to the problem of domain shift that hinders the effectiveness of fault diagnosis. While recent unsupervised domain adaptatio",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2510.15547": {
+    "id": "2510.15547",
+    "year": "2025",
+    "title": "Hypergraph Contrastive Sensor Fusion for Multimodal Fault Diagnosis in Induction Motors",
+    "authors": [
+      "Usman Ali",
+      "Ali Zia",
+      "Waqas Ali",
+      "Umer Ramzan",
+      "Abdul Rehman",
+      "Muhammad Tayyab Chaudhry"
+    ],
+    "abstract": "Reliable induction motor (IM) fault diagnosis is vital for industrial safety and operational continuity, mitigating costly unplanned downtime. Conventional approaches often struggle to capture complex multimodal signal relationships, are constrained to unimodal data or single fault types, and exhibit performance degradation under noisy or cross-domain conditions. This paper proposes the Multimodal",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2512.24679": {
+    "id": "2512.24679",
+    "year": "2025",
+    "title": "Multi-modal cross-domain mixed fusion model with dual disentanglement for fault diagnosis under unseen working conditions",
+    "authors": [
+      "Pengcheng Xia",
+      "Yixiang Huang",
+      "Chengjin Qin",
+      "Chengliang Liu"
+    ],
+    "abstract": "Intelligent fault diagnosis has become an indispensable technique for ensuring machinery reliability. However, existing methods suffer significant performance decline in real-world scenarios where models are tested under unseen working conditions, while domain adaptation approaches are limited to their reliance on target domain samples. Moreover, most existing studies rely on single-modal sensing ",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2308.14983": {
+    "id": "2308.14983",
+    "year": "2023",
+    "title": "Constructive Incremental Learning for Fault Diagnosis of Rolling Bearings with Ensemble Domain Adaptation",
+    "authors": [
+      "Jiang Liu",
+      "Wei Dai"
+    ],
+    "abstract": "Given the prevalence of rolling bearing fault diagnosis as a practical issue across various working conditions, the limited availability of samples compounds the challenge. Additionally, the complexity of the external environment and the structure of rolling bearings often manifests faults characterized by randomness and fuzziness, hindering the effective extraction of fault characteristics and re",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2503.08749": {
+    "id": "2503.08749",
+    "year": "2025",
+    "title": "Source-free domain adaptation based on label reliability for cross-domain bearing fault diagnosis",
+    "authors": [
+      "Wenyi Wu",
+      "Hao Zhang",
+      "Zhisen Wei",
+      "Xiao-Yuan Jing",
+      "Qinghua Zhang",
+      "Songsong Wu"
+    ],
+    "abstract": "Source-free domain adaptation (SFDA) has been exploited for cross-domain bearing fault diagnosis without access to source data. Current methods select partial target samples with reliable pseudo-labels for model adaptation, which is sub-optimal due to the ignored target samples. We argue that every target sample can contribute to model adaptation, and accordingly propose in this paper a novel SFDA",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2605.04528": {
+    "id": "2605.04528",
+    "year": "2026",
+    "title": "YOTOnet: Zero-Shot Cross-Domain Fault Diagnosis via Domain-Conditioned Mixture of Experts",
+    "authors": [
+      "Zesen Wang",
+      "Zihao Wu",
+      "Yue Hu",
+      "Yang Gao",
+      "Fuzhen Xuan"
+    ],
+    "abstract": "Mechanical equipment forms the critical backbone of modern industrial production, yet domain shift severely limits the generalization of deep learning based fault diagnosis models across different equipment and operating conditions.Inspired by the success of foundation models in achieving zero-shotgeneralization, we propose YOTOnet (You Only Train Once), a novel architecture specifically designed ",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2411.02127": {
+    "id": "2411.02127",
+    "year": "2024",
+    "title": "Supervised Transfer Learning Framework for Fault Diagnosis in Wind Turbines",
+    "authors": [
+      "Kenan Weber",
+      "Christine Preisach"
+    ],
+    "abstract": "Common challenges in fault diagnosis include the lack of labeled data and the need to build models for each domain, resulting in many models that require supervision. Transfer learning can help tackle these challenges by learning cross-domain knowledge. Many approaches still require at least some labeled data in the target domain, and often provide unexplainable results. To this end, we propose a ",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2604.20928": {
+    "id": "2604.20928",
+    "year": "2026",
+    "title": "Domain-Aware Hierarchical Contrastive Learning for Semi-Supervised Generalization Fault Diagnosis",
+    "authors": [
+      "Junyu Ren",
+      "Wensheng Gan",
+      "Philip S Yu"
+    ],
+    "abstract": "Fault diagnosis under unseen operating conditions remains highly challenging when labeled data are scarce. Semi-supervised domain generalization fault diagnosis (SSDGFD) provides a practical solution by jointly exploiting labeled and unlabeled source domains. However, existing methods still suffer from two coupled limitations. First, pseudo-labels for unlabeled domains are typically generated prim",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2510.16033": {
+    "id": "2510.16033",
+    "year": "2025",
+    "title": "Global-focal Adaptation with Information Separation for Noise-robust Transfer Fault Diagnosis",
+    "authors": [
+      "Junyu Ren",
+      "Wensheng Gan",
+      "Guangyu Zhang",
+      "Wei Zhong",
+      "Philip S. Yu"
+    ],
+    "abstract": "Existing transfer fault diagnosis methods typically assume either clean data or sufficient domain similarity, which limits their effectiveness in industrial environments where severe noise interference and domain shifts coexist. To address this challenge, we propose an information separation global-focal adversarial network (ISGFAN), a robust framework for cross-domain fault diagnosis under noise ",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2504.01373": {
+    "id": "2504.01373",
+    "year": "2025",
+    "title": "UniFault: A Fault Diagnosis Foundation Model from Bearing Data",
+    "authors": [
+      "Emadeldeen Eldele",
+      "Mohamed Ragab",
+      "Xu Qing",
+      " Edward",
+      "Zhenghua Chen",
+      "Min Wu"
+    ],
+    "abstract": "Machine fault diagnosis (FD) is a critical task for predictive maintenance, enabling early fault detection and preventing unexpected failures. Despite its importance, existing FD models are operation-specific with limited generalization across diverse datasets. Foundation models (FM) have demonstrated remarkable potential in both visual and language domains, achieving impressive generalization cap",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2505.07315": {
+    "id": "2505.07315",
+    "year": "2025",
+    "title": "FedIFL: A federated cross-domain diagnostic framework for motor-driven systems with inconsistent fault modes",
+    "authors": [
+      "Zexiao Wang",
+      "Yankai Wang",
+      "Xiaoqiang Liao",
+      "Xinguo Ming",
+      "Weiming Shen"
+    ],
+    "abstract": "Due to the scarcity of industrial data, individual equipment users, particularly start-ups, struggle to independently train a comprehensive fault diagnosis model; federated learning enables collaborative training while ensuring data privacy, making it an ideal solution. However, the diversity of working conditions leads to variations in fault modes, resulting in inconsistent label spaces across di",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2504.20756": {
+    "id": "2504.20756",
+    "year": "2025",
+    "title": "Graph-Based Fault Diagnosis for Rotating Machinery: Adaptive Segmentation and Structural Feature Integration",
+    "authors": [
+      "Moirangthem Tiken Singh"
+    ],
+    "abstract": "This paper proposes a novel graph-based framework for robust and interpretable multiclass fault diagnosis in rotating machinery. The method integrates entropy-optimized signal segmentation, time-frequency feature extraction, and graph-theoretic modeling to transform vibration signals into structured representations suitable for classification. Graph metrics, such as average shortest path length, m",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2502.00545": {
+    "id": "2502.00545",
+    "year": "2025",
+    "title": "Integrating Frequency Guidance into Multi-source Domain Generalization for Bearing Fault Diagnosis",
+    "authors": [
+      "Xiaotong Tu",
+      "Chenyu Ma",
+      "Qingyao Wu",
+      "Yinhao Liu",
+      "Hongyang Zhang"
+    ],
+    "abstract": "Recent generalizable fault diagnosis researches have effectively tackled the distributional shift between unseen working conditions. Most of them mainly focus on learning domain-invariant representation through feature-level methods. However, the increasing numbers of unseen domains may lead to domain-invariant features contain instance-level spurious correlations, which impact the previous models",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2605.20742": {
+    "id": "2605.20742",
+    "year": "2026",
+    "title": "VBFDD-Agent for Electric Vehicle Battery Fault Detection and Diagnosis: Descriptive Text Modeling of Battery Digital Signals",
+    "authors": [
+      "Joey Chan",
+      "Zhen Chen",
+      "Ershun Pan"
+    ],
+    "abstract": "With the rapid proliferation of electric vehicles, the safety and reliability of lithium-ion batteries have become critical concerns. Effective anomaly detection is essential for ensuring safe battery operation. However, as battery systems and operating scenarios become increasingly complex, battery fault diagnosis and maintenance require stronger cross-domain adaptability and human-AI collaborati",
+    "query": "abs:\"cross-domain\" AND abs:\"fault diagnosis\""
+  },
+  "2506.17740": {
+    "id": "2506.17740",
+    "year": "2025",
+    "title": "Rethinking the Role of Operating Conditions for Learning-based Multi-condition Fault Diagnosis",
+    "authors": [
+      "Pengyu Han",
+      "Zeyi Liu",
+      "Shijin Chen",
+      "Dongliang Zou",
+      "Xiao He"
+    ],
+    "abstract": "Multi-condition fault diagnosis is prevalent in industrial systems and presents substantial challenges for conventional diagnostic approaches. The discrepancy in data distributions across different operating conditions degrades model performance when a model trained under one condition is applied to others. With the recent advancements in deep learning, transfer learning has been introduced to the",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2407.13978": {
+    "id": "2407.13978",
+    "year": "2024",
+    "title": "Dual adversarial and contrastive network for single-source domain generalization in fault diagnosis",
+    "authors": [
+      "Guangqiang Li",
+      "M. Amine Atoui",
+      "Xiangshun Li"
+    ],
+    "abstract": "Domain generalization achieves fault diagnosis on unseen modes. In process industrial systems, fault samples are limited, and it is quite common that the available fault data are from a single mode. Extracting domain-invariant features from single-mode data for unseen mode fault diagnosis poses challenges. Existing methods utilize a generator module to simulate samples of unseen modes. However, mu",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2503.11774": {
+    "id": "2503.11774",
+    "year": "2025",
+    "title": "UBMF: Uncertainty-Aware Bayesian Meta-Learning Framework for Fault Diagnosis with Imbalanced Industrial Data",
+    "authors": [
+      "Zhixuan Lian",
+      "Shangyu Li",
+      "Qixuan Huang",
+      "Zijian Huang",
+      "Haifei Liu",
+      "Jianan Qiu"
+    ],
+    "abstract": "Fault diagnosis of mechanical equipment involves data collection, feature extraction, and pattern recognition but is often hindered by the imbalanced nature of industrial data, introducing significant uncertainty and reducing diagnostic reliability. To address these challenges, this study proposes the Uncertainty-Aware Bayesian Meta-Learning Framework (UBMF), which integrates four key modules: dat",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2605.24457": {
+    "id": "2605.24457",
+    "year": "2026",
+    "title": "Asymmetric Adaptation-based Real-time Fault Diagnosis Under Transitional Operating Conditions",
+    "authors": [
+      "Hongshuo Zhao",
+      "Zeyi Liu",
+      "Xiao He"
+    ],
+    "abstract": "Data streams in real-world industrial scenarios often contain transitional operating conditions that are uncovered during offline training, leading to significant distribution shifts. To bridge the gap between static offline models and dynamic online data, a novel asymmetric adaptation-based fault diagnosis method is proposed in this paper. Specifically, in the offline stage, we employ domain gene",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2607.04188": {
+    "id": "2607.04188",
+    "year": "2026",
+    "title": "Physics-Informed Graph Learning with Uncertainty Awareness for Open-Set Domain Generalization in Fault Diagnosis",
+    "authors": [
+      "Jinfeng Zhu",
+      "Shiyu Long",
+      "Ye Yuan"
+    ],
+    "abstract": "Intelligent industrial maintenance critically relies on reliable fault diagnosis of rotating machinery. However, it faces formidable challenges from unknown fault types and domain shifts induced by varying operating conditions, which is formally formulated as the open-set domain generalization (OSDG) problem. Existing methods are mainly data-driven, thereby overlooking the cascaded propagation of ",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2403.07033": {
+    "id": "2403.07033",
+    "year": "2024",
+    "title": "Interpreting What Typical Fault Signals Look Like via Prototype-matching",
+    "authors": [
+      "Qian Chen",
+      "Xingjian Dong",
+      "Zhike Peng"
+    ],
+    "abstract": "Neural networks, with powerful nonlinear mapping and classification capabilities, are widely applied in mechanical fault diagnosis to ensure safety. However, being typical black-box models, their application is limited in high-reliability-required scenarios. To understand the classification logic and explain what typical fault signals look like, the prototype matching network (PMN) is proposed by ",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2605.22028": {
+    "id": "2605.22028",
+    "year": "2026",
+    "title": "Replay-guided Test-time Adaptation for Fault Diagnosis Under Unseen Operating Conditions",
+    "authors": [
+      "Yakun Wang",
+      "Pengyu Han",
+      "Zeyi Liu",
+      "Xiao He",
+      "Dongming Cai",
+      "Hongshuo Zhao"
+    ],
+    "abstract": "In modern industrial systems, machinery frequently operates under dynamic environments with continuously varying loads and speeds. Consequently, deep learning-based fault diagnosis models often suffer from severe performance degradation under unseen operating conditions due to complex data distribution shifts. Since existing methods predominantly rely on static offline training, they lack the capa",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2605.06643": {
+    "id": "2605.06643",
+    "year": "2026",
+    "title": "Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study",
+    "authors": [
+      "Hao Dong",
+      "Hongzhao Li",
+      "Shupan Li",
+      "Muhammad Haris Khan",
+      "Eleni Chatzi",
+      "Olga Fink"
+    ],
+    "abstract": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or are artifacts of inconsistent evaluation protocols. Current research is fragmented, with studies varying significantly across datasets, modality configurations, and experimental settings. Furthermore,",
+    "query": "abs:\"domain generalization\" AND abs:\"fault diagnosis\""
+  },
+  "2604.01845": {
+    "id": "2604.01845",
+    "year": "2026",
+    "title": "CANDI: Curated Test-Time Adaptation for Multivariate Time-Series Anomaly Detection Under Distribution Shift",
+    "authors": [
+      "HyunGi Kim",
+      "Jisoo Mok",
+      "Hyungyu Lee",
+      "Juhyeon Shin",
+      "Sungroh Yoon"
+    ],
+    "abstract": "Multivariate time-series anomaly detection (MTSAD) aims to identify deviations from normality in multivariate time-series and is critical in real-world applications. However, in real-world deployments, distribution shifts are ubiquitous and cause severe performance degradation in pre-trained anomaly detector. Test-time adaptation (TTA) updates a pre-trained model on-the-fly using only unlabeled te",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2506.02081": {
+    "id": "2506.02081",
+    "year": "2025",
+    "title": "RATFM: Retrieval-augmented Time Series Foundation Model for Anomaly Detection",
+    "authors": [
+      "Chihiro Maru",
+      "Shoetsu Sato"
+    ],
+    "abstract": "Inspired by the success of large language models (LLMs) in natural language processing, recent research has explored the building of time series foundation models and applied them to tasks such as forecasting, classification, and anomaly detection. However, their performances vary between different domains and tasks. In LLM-based approaches, test-time adaptation using example-based prompting has b",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2501.04970": {
+    "id": "2501.04970",
+    "year": "2025",
+    "title": "Battling the Non-stationarity in Time Series Forecasting via Test-time Adaptation",
+    "authors": [
+      "HyunGi Kim",
+      "Siwon Kim",
+      "Jisoo Mok",
+      "Sungroh Yoon"
+    ],
+    "abstract": "Deep Neural Networks have spearheaded remarkable advancements in time series forecasting (TSF), one of the major tasks in time series modeling. Nonetheless, the non-stationarity of time series undermines the reliability of pre-trained source time series forecasters in mission-critical deployment settings. In this study, we introduce a pioneering test-time adaptation framework tailored for TSF (TSF",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2501.01472": {
+    "id": "2501.01472",
+    "year": "2025",
+    "title": "Augmented Contrastive Clustering with Uncertainty-Aware Prototyping for Time Series Test Time Adaptation",
+    "authors": [
+      "Peiliang Gong",
+      "Mohamed Ragab",
+      "Min Wu",
+      "Zhenghua Chen",
+      "Yongyi Su",
+      "Xiaoli Li"
+    ],
+    "abstract": "Test-time adaptation aims to adapt pre-trained deep neural networks using solely online unlabelled test data during inference. Although TTA has shown promise in visual applications, its potential in time series contexts remains largely unexplored. Existing TTA methods, originally designed for visual tasks, may not effectively handle the complex temporal dynamics of real-world time series data, res",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2601.12893": {
+    "id": "2601.12893",
+    "year": "2026",
+    "title": "AdaNODEs: Test Time Adaptation for Time Series Forecasting Using Neural ODEs",
+    "authors": [
+      "Ting Dang",
+      "Soumyajit Chatterjee",
+      "Hong Jia",
+      "Yu Wu",
+      "Flora Salim",
+      "Fahim Kawsar"
+    ],
+    "abstract": "Test time adaptation (TTA) has emerged as a promising solution to adapt pre-trained models to new, unseen data distributions using unlabeled target domain data. However, most TTA methods are designed for independent data, often overlooking the time series data and rarely addressing forecasting tasks. This paper presents AdaNODEs, an innovative source-free TTA method tailored explicitly for time se",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2609.23257": {
+    "id": "2609.23257",
+    "year": "2026",
+    "title": "CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning",
+    "authors": [
+      "Minkyoung Kim",
+      "Daeun Ji",
+      "Yohan Lee",
+      "Beomsoo Kim",
+      "Beakcheol Jang"
+    ],
+    "abstract": "Time series forecasting underpins critical decision-making across diverse domains. While large language models (LLMs) offer promising reasoning capabilities, existing LLM-based time series forecasting approaches either reduce them to numerical predictors that bypass their strengths, or allow direct forecast generation that destabilizes predictions in non-stationary settings. We introduce CTRL, a f",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2312.11976": {
+    "id": "2312.11976",
+    "year": "2023",
+    "title": "When Model Meets New Normals: Test-time Adaptation for Unsupervised Time-series Anomaly Detection",
+    "authors": [
+      "Dongmin Kim",
+      "Sunghyun Park",
+      "Jaegul Choo"
+    ],
+    "abstract": "Time-series anomaly detection deals with the problem of detecting anomalous timesteps by learning normality from the sequence of observations. However, the concept of normality evolves over time, leading to a \"new normal problem\", where the distribution of normality can be changed due to the distribution shifts between training and test data. This paper highlights the prevalence of the new normal ",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2512.15762": {
+    "id": "2512.15762",
+    "year": "2025",
+    "title": "Cross-Sample Augmented Test-Time Adaptation for Personalized Intraoperative Hypotension Prediction",
+    "authors": [
+      "Kanxue Li",
+      "Yibing Zhan",
+      "Hua Jin",
+      "Chongchong Qi",
+      "Xu Lin",
+      "Baosheng Yu"
+    ],
+    "abstract": "Intraoperative hypotension (IOH) poses significant surgical risks, but accurate prediction remains challenging due to patient-specific variability. While test-time adaptation (TTA) offers a promising approach for personalized prediction, the rarity of IOH events often leads to unreliable test-time training. To address this, we propose CSA-TTA, a novel Cross-Sample Augmented Test-Time Adaptation fr",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2602.00073": {
+    "id": "2602.00073",
+    "year": "2026",
+    "title": "Test-Time Adaptation for Non-stationary Time Series: From Synthetic Regime Shifts to Financial Markets",
+    "authors": [
+      "Yurui Wu",
+      "Qingying Deng",
+      "Wonou Chung",
+      "Mairui Li"
+    ],
+    "abstract": "Time series encountered in practice are rarely stationary. When the data distribution changes, a forecasting model trained on past observations can lose accuracy. We study a small-footprint test-time adaptation (TTA) framework for causal timeseries forecasting and direction classification. The backbone is frozen, and only normalization affine parameters are updated using recent unlabeled windows. ",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2605.17250": {
+    "id": "2605.17250",
+    "year": "2026",
+    "title": "Towards Principled Test-Time Adaptation for Time Series Forecasting",
+    "authors": [
+      "Haochun Wang",
+      "Ruichen Xu",
+      "Georgios Kementzidis",
+      "Karen Cho",
+      "Sebastian Ramirez Villarreal",
+      "Yuefan Deng"
+    ],
+    "abstract": "Test-time adaptation (TTA) has recently emerged as a promising approach for improving time series forecasting (TSF) under distribution shift. Existing TSF-TTA methods differ in how they utilize revealed targets, yet the resulting adaptation protocols remain heterogeneous and lack a clearly unified formulation. To address this issue, we revisit TSF-TTA from the perspective of protocol cleanliness a",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2605.08005": {
+    "id": "2605.08005",
+    "year": "2026",
+    "title": "STEPS: A Temporal Smooth Error Propagation Solver on the Manifolds for Test-Time Adaptation in Time Series Forecasting",
+    "authors": [
+      "Jiaqi Liu",
+      "Yifan Ouyang",
+      "Zhifei Song",
+      "Sim Kuan Goh",
+      "Ashwaq Qasem"
+    ],
+    "abstract": "Test-Time Adaptation (TTA) aims to improve time series forecasting under distribution shifts by using limited observations revealed during inference. However, forecasting TTA must operate in a source-free online setting, where the adaptation signal is short, temporally correlated, and potentially noisy. Existing methods can therefore suffer from weak identifiability, error accumulation, and unstab",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2505.11902": {
+    "id": "2505.11902",
+    "year": "2025",
+    "title": "Dynamic Perturbed Adaptive Method for Infinite Task-Conflicting Time Series",
+    "authors": [
+      "Jiang You",
+      "Xiaozhen Wang",
+      "Arben Cela"
+    ],
+    "abstract": "We formulate time series tasks as input-output mappings under varying objectives, where the same input may yield different outputs. This challenges a model's generalization and adaptability. To study this, we construct a synthetic dataset with numerous conflicting subtasks to evaluate adaptation under frequent task shifts. Existing static models consistently fail in such settings. We propose a dyn",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2506.23424": {
+    "id": "2506.23424",
+    "year": "2025",
+    "title": "Accurate Parameter-Efficient Test-Time Adaptation for Time Series Forecasting",
+    "authors": [
+      "Heitor R. Medeiros",
+      "Hossein Sharifi-Noghabi",
+      "Gabriel L. Oliveira",
+      "Saghar Irandoust"
+    ],
+    "abstract": "Real-world time series often exhibit a non-stationary nature, degrading the performance of pre-trained forecasting models. Test-Time Adaptation (TTA) addresses this by adjusting models during inference, but existing methods typically update the full model, increasing memory and compute costs. We propose PETSA, a parameter-efficient method that adapts forecasters at test time by only updating small",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2605.10038": {
+    "id": "2605.10038",
+    "year": "2026",
+    "title": "TimeClaw: A Time-Series AI Agent with Exploratory Execution Learning",
+    "authors": [
+      "Hangchen Liu",
+      "Dongyuan Li",
+      "Renhe Jiang",
+      "Jiewen Deng",
+      "Weiwei Ye",
+      "Yoshihide Sekimoto"
+    ],
+    "abstract": "Time series analysis underpins forecasting, monitoring, and decision making in domains such as finance and weather, where solving a task often requires both numerical accuracy and contextual reasoning. Recent progress has moved from specialized neural predictors to approaches built on LLMs and foundation models that can reason over time series inputs and use external tools. However, most such syst",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2603.27814": {
+    "id": "2603.27814",
+    "year": "2026",
+    "title": "RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series",
+    "authors": [
+      "Indar Kumar",
+      "Akanksha Tiwari",
+      "Sai Krishna Jasti",
+      "Ankit Hemant Lade"
+    ],
+    "abstract": "Test-time adaptation (TTA) enables neural forecasters to adapt to distribution shifts in streaming time series, but existing methods apply the same adaptation intensity regardless of the nature of the shift. We propose Regime-Guided Test-Time Adaptation (RG-TTA), a meta-controller that continuously modulates adaptation intensity based on distributional similarity to previously-seen regimes. Using ",
+    "query": "abs:\"test-time adaptation\" AND abs:\"time series\""
+  },
+  "2610.02357": {
+    "id": "2610.02357",
+    "year": "2026",
+    "title": "Conformal Prediction for Time Series with Deep Sequence Models",
+    "authors": [
+      "Junghwan Lee",
+      "Jonghyeok Lee",
+      "Yao Xie"
+    ],
+    "abstract": "Recent advances in deep learning for time series prediction have amplified the need for reliable uncertainty quantification. Conformal prediction has gained attention as a distribution-free framework for constructing prediction intervals with coverage guarantees. However, its coverage guarantees rely on data exchangeability, an assumption generally violated in time series. Active research has focu",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2303.12783": {
+    "id": "2303.12783",
+    "year": "2023",
+    "title": "Conformal Prediction for Time Series with Modern Hopfield Networks",
+    "authors": [
+      "Andreas Auer",
+      "Martin Gauch",
+      "Daniel Klotz",
+      "Sepp Hochreiter"
+    ],
+    "abstract": "To quantify uncertainty, conformal prediction methods are gaining continuously more interest and have already been successfully applied to various domains. However, they are difficult to apply to time series as the autocorrelative structure of time series violates basic assumptions required by conformal prediction. We propose HopCPT, a novel conformal prediction approach for time series that not o",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2502.05709": {
+    "id": "2502.05709",
+    "year": "2025",
+    "title": "Flow-based Conformal Prediction for Multi-dimensional Time Series",
+    "authors": [
+      "Junghwan Lee",
+      "Chen Xu",
+      "Yao Xie"
+    ],
+    "abstract": "Time series prediction underpins a broad range of downstream tasks across many scientific domains. Recent advances and increasing adoption of black-box machine learning models for time series prediction highlight the critical need for uncertainty quantification. While conformal prediction has gained attention as a reliable uncertainty quantification method, conformal prediction for time series fac",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2509.02844": {
+    "id": "2509.02844",
+    "year": "2025",
+    "title": "Conformal Prediction for Time-series Forecasting with Change Points",
+    "authors": [
+      "Sophia Sun",
+      "Rose Yu"
+    ],
+    "abstract": "Conformal prediction has been explored as a general and efficient way to provide uncertainty quantification for time series. However, current methods struggle to handle time series data with change points - sudden shifts in the underlying data-generating process. In this paper, we propose a novel Conformal Prediction for Time-series with Change points (CPTC) algorithm, addressing this gap by integ",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2212.03281": {
+    "id": "2212.03281",
+    "year": "2022",
+    "title": "Copula Conformal Prediction for Multi-step Time Series Forecasting",
+    "authors": [
+      "Sophia Sun",
+      "Rose Yu"
+    ],
+    "abstract": "Accurate uncertainty measurement is a key step to building robust and reliable machine learning systems. Conformal prediction is a distribution-free uncertainty quantification algorithm popular for its ease of implementation, statistical coverage guarantees, and versatility for underlying forecasters. However, existing conformal prediction algorithms for time series are limited to single-step pred",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2507.08858": {
+    "id": "2507.08858",
+    "year": "2025",
+    "title": "Foundation models for time series forecasting: Application in conformal prediction",
+    "authors": [
+      "Sami Achour",
+      "Yassine Bouher",
+      "Duong Nguyen",
+      "Nicolas Chesneau"
+    ],
+    "abstract": "The zero-shot capabilities of foundation models (FMs) for time series forecasting offer promising potentials in conformal prediction, as most of the available data can be allocated to calibration. This study compares the performance of Time Series Foundation Models (TSFMs) with traditional methods, including statistical models and gradient boosting, within a conformal prediction setting. Our findi",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2407.06390": {
+    "id": "2407.06390",
+    "year": "2024",
+    "title": "JANET: Joint Adaptive predictioN-region Estimation for Time-series",
+    "authors": [
+      "Eshant English",
+      "Eliot Wong-Toi",
+      "Matteo Fontana",
+      "Stephan Mandt",
+      "Padhraic Smyth",
+      "Christoph Lippert"
+    ],
+    "abstract": "Conformal prediction provides machine learning models with prediction sets that offer theoretical guarantees, but the underlying assumption of exchangeability limits its applicability to time series data. Furthermore, existing approaches struggle to handle multi-step ahead prediction tasks, where uncertainty estimates across multiple future time points are crucial. We propose JANET (Joint Adaptive",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2502.09443": {
+    "id": "2502.09443",
+    "year": "2025",
+    "title": "Relational Conformal Prediction for Correlated Time Series",
+    "authors": [
+      "Andrea Cini",
+      "Alexander Jenkins",
+      "Danilo Mandic",
+      "Cesare Alippi",
+      "Filippo Maria Bianchi"
+    ],
+    "abstract": "We address the problem of uncertainty quantification in time series forecasting by exploiting observations at correlated sequences. Relational deep learning methods leveraging graph representations are among the most effective tools for obtaining point estimates from spatiotemporal data and correlated time series. However, the problem of exploiting relational structures to estimate the uncertainty",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2110.13031": {
+    "id": "2110.13031",
+    "year": "2021",
+    "title": "Applying Regression Conformal Prediction with Nearest Neighbors to time series data",
+    "authors": [
+      "Samya Tajmouati",
+      "Bouazza El Wahbi",
+      "Mohammed Dakkoun"
+    ],
+    "abstract": "In this paper, we apply conformal prediction to time series data. Conformal prediction isa method that produces predictive regions given a confidence level. The regions outputs arealways valid under the exchangeability assumption. However, this assumption does not holdfor the time series data because there is a link among past, current, and future observations.Consequently, the challenge of applyi",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2405.16828": {
+    "id": "2405.16828",
+    "year": "2024",
+    "title": "Kernel-based Optimally Weighted Conformal Time-Series Prediction",
+    "authors": [
+      "Jonghyeok Lee",
+      "Chen Xu",
+      "Yao Xie"
+    ],
+    "abstract": "In this work, we present a novel conformal prediction method for time-series, which we call Kernel-based Optimally Weighted Conformal Prediction Intervals (KOWCPI). Specifically, KOWCPI adapts the classic Reweighted Nadaraya-Watson (RNW) estimator for quantile regression on dependent data and learns optimal data-adaptive weights. Theoretically, we tackle the challenge of establishing a conditional",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2406.16766": {
+    "id": "2406.16766",
+    "year": "2024",
+    "title": "Conformal time series decomposition with component-wise exchangeability",
+    "authors": [
+      "Derck W. E. Prinzhorn",
+      "Thijmen Nijdam",
+      "Putri A. van der Linden",
+      "Alexander Timans"
+    ],
+    "abstract": "Conformal prediction offers a practical framework for distribution-free uncertainty quantification, providing finite-sample coverage guarantees under relatively mild assumptions on data exchangeability. However, these assumptions cease to hold for time series due to their temporally correlated nature. In this work, we present a novel use of conformal prediction for time series forecasting that inc",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2609.33868": {
+    "id": "2609.33868",
+    "year": "2026",
+    "title": "Conformal Coverage of Time Series: Validity and Inference",
+    "authors": [
+      "Percy S. Zhai",
+      "Maggie Cheng",
+      "Wei Biao Wu"
+    ],
+    "abstract": "Conformal prediction provides marginal coverage guarantees, yet practitioners may wonder if the observed coverage is truly abnormal or consistent with sampling variation. Inference for realized coverage has received comparatively little attention, especially for time series. We study split conformal prediction with adjacent calibration and test sets of temporally dependent data. Using the function",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2507.11739": {
+    "id": "2507.11739",
+    "year": "2025",
+    "title": "Sparse Identification of Nonlinear Dynamics with Conformal Prediction",
+    "authors": [
+      "Urban Fasel"
+    ],
+    "abstract": "The Sparse Identification of Nonlinear Dynamics (SINDy) is a method for discovering nonlinear dynamical system models from data. Quantifying uncertainty in SINDy models is essential for assessing their reliability, particularly in safety-critical applications. While various uncertainty quantification methods exist for SINDy, including Bayesian and ensemble approaches, this work explores the integr",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2212.03463": {
+    "id": "2212.03463",
+    "year": "2022",
+    "title": "Sequential Predictive Conformal Inference for Time Series",
+    "authors": [
+      "Chen Xu",
+      "Yao Xie"
+    ],
+    "abstract": "We present a new distribution-free conformal prediction algorithm for sequential data (e.g., time series), called the \\textit{sequential predictive conformal inference} (\\texttt{SPCI}). We specifically account for the nature that time series data are non-exchangeable, and thus many existing conformal prediction algorithms are not applicable. The main idea is to adaptively re-estimate the condition",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2605.30292": {
+    "id": "2605.30292",
+    "year": "2026",
+    "title": "Leave a Window Out: Modifying the Jackknife for Predictive Inference in Time Series",
+    "authors": [
+      "Hanyang Jiang",
+      "Rina Foygel Barber",
+      "Ashwin Pananjady",
+      "Yao Xie"
+    ],
+    "abstract": "Conformal prediction methods enjoy strong theoretical and empirical predictive inference performance, provided the data is exchangeable and is treated symmetrically during training. However, these assumptions are impractical in many settings, such as time series, where temporal dependence violates exchangeability and it is preferable to use predictors that leverage dependence by treating data asym",
+    "query": "abs:\"conformal prediction\" AND abs:\"time series\""
+  },
+  "2502.03383": {
+    "id": "2502.03383",
+    "year": "2025",
+    "title": "Transformers and Their Roles as Time Series Foundation Models",
+    "authors": [
+      "Dennis Wu",
+      "Yihan He",
+      "Yuan Cao",
+      "Jianqing Fan",
+      "Han Liu"
+    ],
+    "abstract": "We give a comprehensive analysis of transformers as time series foundation models, focusing on their approximation and generalization capabilities. First, we demonstrate that there exist transformers that fit an autoregressive model on input univariate time series via gradient descent. We then analyze MOIRAI, a multivariate time series foundation model capable of handling an arbitrary number of co",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2602.17634": {
+    "id": "2602.17634",
+    "year": "2026",
+    "title": "Reverso: Efficient Time Series Foundation Models for Zero-shot Forecasting",
+    "authors": [
+      "Xinghong Fu",
+      "Yanhong Li",
+      "Georgios Papaioannou",
+      "Yoon Kim"
+    ],
+    "abstract": "Learning time series foundation models has been shown to be a promising approach for zero-shot time series forecasting across diverse time series domains. Insofar as scaling has been a critical driver of performance of foundation models in other modalities such as language and vision, much recent work on time series foundation modeling has focused on scaling. This has resulted in time series found",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2410.24087": {
+    "id": "2410.24087",
+    "year": "2024",
+    "title": "In-Context Fine-Tuning for Time-Series Foundation Models",
+    "authors": [
+      "Abhimanyu Das",
+      "Matthew Faw",
+      "Rajat Sen",
+      "Yichen Zhou"
+    ],
+    "abstract": "Motivated by the recent success of time-series foundation models for zero-shot forecasting, we present a methodology for $\\textit{in-context fine-tuning}$ of a time-series foundation model. In particular, we design a pretrained foundation model that can be prompted (at inference time) with multiple time-series examples, in order to forecast a target time-series into the future. Our foundation mode",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2410.09487": {
+    "id": "2410.09487",
+    "year": "2024",
+    "title": "Benchmarking Time Series Foundation Models for Short-Term Household Electricity Load Forecasting",
+    "authors": [
+      "Marcel Meyer",
+      "David Zapata",
+      "Sascha Kaltenpoth",
+      "Oliver Müller"
+    ],
+    "abstract": "Accurate household electricity short-term load forecasting (STLF) is key to future and sustainable energy systems. While various studies have analyzed statistical, machine learning, or deep learning approaches for household electricity STLF, recently proposed time series foundation models such as Chronos, TimesFM or Time-MoE promise a new approach for household electricity STLF. These models are t",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2608.24303": {
+    "id": "2608.24303",
+    "year": "2026",
+    "title": "Causal Analysis for Time Series Foundation Models",
+    "authors": [
+      "Mathis Jander",
+      "Wouter van Heeswijk",
+      "Martijn Mes"
+    ],
+    "abstract": "Transitioning from bespoke time series models towards time series foundation models changes the relationship of model and application from one-to-one to one-to-many. This shift introduces concentration risk as many, potentially high-risk, forecasting applications are exposed to the same biases and failure modes of a single time series foundation model. At the same time, this centralization allows ",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2411.12824": {
+    "id": "2411.12824",
+    "year": "2024",
+    "title": "Generalized Prompt Tuning: Adapting Frozen Univariate Time Series Foundation Models for Multivariate Healthcare Time Series",
+    "authors": [
+      "Mingzhu Liu",
+      "Angela H. Chen",
+      "George H. Chen"
+    ],
+    "abstract": "Time series foundation models are pre-trained on large datasets and are able to achieve state-of-the-art performance in diverse tasks. However, to date, there has been limited work demonstrating how well these models perform in medical applications, where labeled data can be scarce. Further, we observe that currently, the majority of time series foundation models either are univariate in nature, o",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2503.04118": {
+    "id": "2503.04118",
+    "year": "2025",
+    "title": "TimeFound: A Foundation Model for Time Series Forecasting",
+    "authors": [
+      "Congxi Xiao",
+      "Jingbo Zhou",
+      "Yixiong Xiao",
+      "Xinjiang Lu",
+      "Le Zhang",
+      "Hui Xiong"
+    ],
+    "abstract": "We present TimeFound, an encoder-decoder transformer-based time series foundation model for out-of-the-box zero-shot forecasting. To handle time series data from various domains, TimeFound employs a multi-resolution patching strategy to capture complex temporal patterns at multiple scales. We pre-train our model with two sizes (200M and 710M parameters) on a large time-series corpus comprising bot",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2412.09880": {
+    "id": "2412.09880",
+    "year": "2024",
+    "title": "Financial Fine-tuning a Large Time Series Model",
+    "authors": [
+      "Xinghong Fu",
+      "Masanori Hirano",
+      "Kentaro Imajo"
+    ],
+    "abstract": "Large models have shown unprecedented capabilities in natural language processing, image generation, and most recently, time series forecasting. This leads us to ask the question: treating market prices as a time series, can large models be used to predict the market? In this paper, we answer this by evaluating the performance of the latest time series foundation model TimesFM on price prediction.",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2409.13530": {
+    "id": "2409.13530",
+    "year": "2024",
+    "title": "Towards Long-Context Time Series Foundation Models",
+    "authors": [
+      "Nina Żukowska",
+      "Mononito Goswami",
+      "Michał Wiliński",
+      "Willa Potosnak",
+      "Artur Dubrawski"
+    ],
+    "abstract": "Time series foundation models have shown impressive performance on a variety of tasks, across a wide range of domains, even in zero-shot settings. However, most of these models are designed to handle short univariate time series as an input. This limits their practical use, especially in domains such as healthcare with copious amounts of long and multivariate data with strong temporal and intra-va",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2510.26777": {
+    "id": "2510.26777",
+    "year": "2025",
+    "title": "Pre-trained Forecasting Models: Strong Zero-Shot Feature Extractors for Time Series Classification",
+    "authors": [
+      "Andreas Auer",
+      "Daniel Klotz",
+      "Sebastinan Böck",
+      "Sepp Hochreiter"
+    ],
+    "abstract": "Recent research on time series foundation models has primarily focused on forecasting, leaving it unclear how generalizable their learned representations are. In this study, we examine whether frozen pre-trained forecasting models can provide effective representations for classification. To this end, we compare different representation extraction strategies and introduce two model-agnostic embeddi",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2505.11349": {
+    "id": "2505.11349",
+    "year": "2025",
+    "title": "Context parroting: A simple but tough-to-beat baseline for foundation models in scientific machine learning",
+    "authors": [
+      "Yuanzhao Zhang",
+      "William Gilpin"
+    ],
+    "abstract": "Recent time-series foundation models exhibit strong abilities to predict physical systems. These abilities include zero-shot forecasting, in which a model forecasts future states of a system given only a short trajectory as context, without knowledge of the underlying physics. Here, we show that foundation models often forecast through a simple parroting strategy, and when they are not parroting t",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2607.01204": {
+    "id": "2607.01204",
+    "year": "2026",
+    "title": "TiRex-2: Generalizing TiRex to Multivariate Data and Streaming",
+    "authors": [
+      "Patrick Podest",
+      "Marco Pichler",
+      "Elias Bürger",
+      "Levente Zólyomi",
+      "Bernhard Voggenberger",
+      "Wilhelm Berghammer"
+    ],
+    "abstract": "We introduce TiRex-2, a recurrent xLSTM-based time series foundation model that generalizes the univariate TiRex to multivariate forecasting with both past and future covariates. Real-world forecasting is inherently sequential: observations arrive continuously, variables evolve jointly, and a subset of covariates is known ahead of time. Existing Transformer-based time series foundation models capt",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2507.00078": {
+    "id": "2507.00078",
+    "year": "2025",
+    "title": "The language of time: a language model perspective on time-series foundation models",
+    "authors": [
+      "Yi Xie",
+      "Yun Xiong",
+      "Zejian Shi",
+      "Hao Niu",
+      "Zhengfu Liu"
+    ],
+    "abstract": "With the rise of large language models, the paradigm of training foundation models with massive parameter counts on vast datasets has been adopted in multiple domains to achieve remarkable success. Time series foundation models represent a significant extension of this paradigm, demonstrating exceptional expressive power, generalization, and cross-domain transferability. However, this gives rise t",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2412.08906": {
+    "id": "2412.08906",
+    "year": "2024",
+    "title": "Federated Foundation Models on Heterogeneous Time Series",
+    "authors": [
+      "Shengchao Chen",
+      "Guodong Long",
+      "Jing Jiang",
+      "Chengqi Zhang"
+    ],
+    "abstract": "Training a general-purpose time series foundation models with robust generalization capabilities across diverse applications from scratch is still an open challenge. Efforts are primarily focused on fusing cross-domain time series datasets to extract shared subsequences as tokens for training models on Transformer architecture. However, due to significant statistical heterogeneity across domains, ",
+    "query": "abs:\"time series foundation model\""
+  },
+  "2510.14814": {
+    "id": "2510.14814",
+    "year": "2025",
+    "title": "Tackling Time-Series Forecasting Generalization via Mitigating Concept Drift",
+    "authors": [
+      "Zhiyuan Zhao",
+      "Haoxin Liu",
+      "B. Aditya Prakash"
+    ],
+    "abstract": "Time-series forecasting finds broad applications in real-world scenarios. Due to the dynamic nature of time series data, it is important for time-series forecasting models to handle potential distribution shifts over time. In this paper, we initially identify two types of distribution shifts in time series: concept drift and temporal shift. We acknowledge that while existing studies primarily focu",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2103.14079": {
+    "id": "2103.14079",
+    "year": "2021",
+    "title": "Domain Specific Concept Drift Detectors for Predicting Financial Time Series",
+    "authors": [
+      "Filippo Neri"
+    ],
+    "abstract": "Concept drift detectors allow learning systems to maintain good accuracy on non-stationary data streams. Financial time series are an instance of non-stationary data streams whose concept drifts (market phases) are so important to affect investment decisions worldwide. This paper studies how concept drift detectors behave when applied to financial time series. General results are: a) concept drift",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2501.01480": {
+    "id": "2501.01480",
+    "year": "2025",
+    "title": "CORAL: Concept Drift Representation Learning for Co-evolving Time-series",
+    "authors": [
+      "Kunpeng Xu",
+      "Lifei Chen",
+      "Shengrui Wang"
+    ],
+    "abstract": "In the realm of time series analysis, tackling the phenomenon of concept drift poses a significant challenge. Concept drift -- characterized by the evolving statistical properties of time series data, affects the reliability and accuracy of conventional analysis models. This is particularly evident in co-evolving scenarios where interactions among variables are crucial. This paper presents CORAL, ",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2007.15272": {
+    "id": "2007.15272",
+    "year": "2020",
+    "title": "ConceptExplorer: Visual Analysis of Concept Driftsin Multi-source Time-series Data",
+    "authors": [
+      "Xumeng Wang",
+      "Wei Chen",
+      "Jiazhi Xia",
+      "Zexian Chen",
+      "Dongshi Xu",
+      "Xiangyang Wu"
+    ],
+    "abstract": "Time-series data is widely studied in various scenarios, like weather forecast, stock market, customer behavior analysis. To comprehensively learn about the dynamic environments, it is necessary to comprehend features from multiple data sources. This paper proposes a novel visual analysis approach for detecting and analyzing concept drifts from multi-sourced time-series. We propose a visual detect",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2410.10041": {
+    "id": "2410.10041",
+    "year": "2024",
+    "title": "WormKAN: Are KAN Effective for Identifying and Tracking Concept Drift in Time Series?",
+    "authors": [
+      "Kunpeng Xu",
+      "Lifei Chen",
+      "Shengrui Wang"
+    ],
+    "abstract": "Dynamic concepts in time series are crucial for understanding complex systems such as financial markets, healthcare, and online activity logs. These concepts help reveal structures and behaviors in sequential data for better decision-making and forecasting. However, existing models often struggle to detect and track concept drift due to limitations in interpretability and adaptability. To address ",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2110.06383": {
+    "id": "2110.06383",
+    "year": "2021",
+    "title": "Real-time Drift Detection on Time-series Data",
+    "authors": [
+      "Nandini Ramanan",
+      "Rasool Tahmasbi",
+      "Marjorie Sayer",
+      "Deokwoo Jung",
+      "Shalini Hemachandran",
+      "Claudionor Nunes Coelho"
+    ],
+    "abstract": "Practical machine learning applications involving time series data, such as firewall log analysis to proactively detect anomalous behavior, are concerned with real time analysis of streaming data. Consequently, we need to update the ML models as the statistical characteristics of such data may shift frequently with time. One alternative explored in the literature is to retrain models with updated ",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2412.08435": {
+    "id": "2412.08435",
+    "year": "2024",
+    "title": "Proactive Model Adaptation Against Concept Drift for Online Time Series Forecasting",
+    "authors": [
+      "Lifan Zhao",
+      "Yanyan Shen"
+    ],
+    "abstract": "Time series forecasting always faces the challenge of concept drift, where data distributions evolve over time, leading to a decline in forecast model performance. Existing solutions are based on online learning, which continually organize recent time series observations as new training samples and update model parameters according to the forecasting feedback on recent data. However, they overlook",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "1905.05761": {
+    "id": "1905.05761",
+    "year": "2019",
+    "title": "Online Anomaly Detection with Sparse Gaussian Processes",
+    "authors": [
+      "Jingjing Fei",
+      "Shiliang Sun"
+    ],
+    "abstract": "Online anomaly detection of time-series data is an important and challenging task in machine learning. Gaussian processes (GPs) are powerful and flexible models for modeling time-series data. However, the high time complexity of GPs limits their applications in online anomaly detection. Attributed to some internal or external changes, concept drift usually occurs in time-series data, where the cha",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2312.10212": {
+    "id": "2312.10212",
+    "year": "2023",
+    "title": "A Remark on Concept Drift for Dependent Data",
+    "authors": [
+      "Fabian Hinder",
+      "Valerie Vaquet",
+      "Barbara Hammer"
+    ],
+    "abstract": "Concept drift, i.e., the change of the data generating distribution, can render machine learning models inaccurate. Several works address the phenomenon of concept drift in the streaming context usually assuming that consecutive data points are independent of each other. To generalize to dependent data, many authors link the notion of concept drift to time series. In this work, we show that the te",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2107.09785": {
+    "id": "2107.09785",
+    "year": "2021",
+    "title": "High-dimensional Multivariate Time Series Forecasting in IoT Applications using Embedding Non-stationary Fuzzy Time Series",
+    "authors": [
+      "Hugo Vinicius Bitencourt",
+      "Frederico Gadelha Guimarães"
+    ],
+    "abstract": "In Internet of things (IoT), data is continuously recorded from different data sources and devices can suffer faults in their embedded electronics, thus leading to a high-dimensional data sets and concept drift events. Therefore, methods that are capable of high-dimensional non-stationary time series are of great value in IoT applications. Fuzzy Time Series (FTS) models stand out as data-driven no",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2004.12554": {
+    "id": "2004.12554",
+    "year": "2020",
+    "title": "Forecasting in Non-stationary Environments with Fuzzy Time Series",
+    "authors": [
+      "Petrônio Cândido de Lima e Silva",
+      "Carlos Alberto Severiano Junior",
+      "Marcos Antonio Alves",
+      "Rodrigo Silva",
+      "Miri Weiss Cohen",
+      "Frederico Gadelha Guimarães"
+    ],
+    "abstract": "In this paper we introduce a Non-Stationary Fuzzy Time Series (NSFTS) method with time varying parameters adapted from the distribution of the data. In this approach, we employ Non-Stationary Fuzzy Sets, in which perturbation functions are used to adapt the membership function parameters in the knowledge base in response to statistical changes in the time series. The proposed method is capable of ",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2304.01512": {
+    "id": "2304.01512",
+    "year": "2023",
+    "title": "Handling Concept Drift in Global Time Series Forecasting",
+    "authors": [
+      "Ziyi Liu",
+      "Rakshitha Godahewa",
+      "Kasun Bandara",
+      "Christoph Bergmeir"
+    ],
+    "abstract": "Machine learning (ML) based time series forecasting models often require and assume certain degrees of stationarity in the data when producing forecasts. However, in many real-world situations, the data distributions are not stationary and they can change over time while reducing the accuracy of the forecasting models, which in the ML literature is known as concept drift. Handling concept drift in",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2603.09062": {
+    "id": "2603.09062",
+    "year": "2026",
+    "title": "Dynamic Multi-period Experts for Online Time Series Forecasting",
+    "authors": [
+      "Seungha Hong",
+      "Sukang Chae",
+      "Suyeon Kim",
+      "Sanghwan Jang",
+      "Hwanjo Yu"
+    ],
+    "abstract": "Online Time Series Forecasting (OTSF) requires models to continuously adapt to concept drift. However, existing methods often treat concept drift as a monolithic phenomenon. To address this limitation, we first redefine concept drift by categorizing it into two distinct types: Recurring Drift, where previously seen patterns reappear, and Emergent Drift, where entirely new patterns emerge. We then ",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2103.05462": {
+    "id": "2103.05462",
+    "year": "2021",
+    "title": "Generating Reliable Process Event Streams and Time Series Data based on Neural Networks",
+    "authors": [
+      "Tobias Herbert",
+      "Juergen Mangler",
+      "Stefanie Rinderle-Ma"
+    ],
+    "abstract": "Domains such as manufacturing and medicine crave for continuous monitoring and analysis of their processes, especially in combination with time series as produced by sensors. Time series data can be exploited to, for example, explain and predict concept drifts during runtime. Generally, a certain data volume is required in order to produce meaningful analysis results. However, reliable data sets a",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2506.15831": {
+    "id": "2506.15831",
+    "year": "2025",
+    "title": "Adaptive Anomaly Detection in the Presence of Concept Drift: Extended Report",
+    "authors": [
+      "Jongjun Park",
+      "Fei Chiang",
+      "Mostafa Milani"
+    ],
+    "abstract": "The presence of concept drift poses challenges for anomaly detection in time series. While anomalies are caused by undesirable changes in the data, differentiating abnormal changes from varying normal behaviours is difficult due to differing frequencies of occurrence, varying time intervals when normal patterns occur, and identifying similarity thresholds to separate the boundary between normal vs",
+    "query": "abs:\"concept drift\" AND abs:\"time series\""
+  },
+  "2504.17709": {
+    "id": "2504.17709",
+    "year": "2025",
+    "title": "Fault Detection in New Wind Turbines with Limited Data by Generative Transfer Learning",
+    "authors": [
+      "Stefan Jonas",
+      "Angela Meyer"
+    ],
+    "abstract": "Intelligent condition monitoring of wind turbines is essential for reducing downtimes. Machine learning models trained on wind turbine operation data are commonly used to detect anomalies and, eventually, operation faults. However, data-driven normal behavior models (NBMs) require a substantial amount of training data, as NBMs trained with scarce data may result in unreliable fault detection. To o",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2607.13544": {
+    "id": "2607.13544",
+    "year": "2026",
+    "title": "Clustering algorithms for multivariate wind farm SCADA data filtering",
+    "authors": [
+      "Nicolò Italiano",
+      "Vasilis Pettas",
+      "Tuhfe Göçmen",
+      "Nicolaos A. Cutululis"
+    ],
+    "abstract": "During wind farm operation, Supervisory Control and Data Acquisition (SCADA) systems record numerous anomalies, transients, and specific operational modes, leading to large datasets. However, for a wide range of applications, only measurements corresponding to normal operation are required and, therefore, the SCADA data must be filtered. For this purpose, several methods have been proposed to auto",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "1910.09808": {
+    "id": "1910.09808",
+    "year": "2019",
+    "title": "A Scalable Predictive Maintenance Model for Detecting Wind Turbine Component Failures Based on SCADA Data",
+    "authors": [
+      "Lorenzo Gigoni",
+      "Alessandro Betti",
+      "Mauro Tucci",
+      "Emanuele Crisostomi"
+    ],
+    "abstract": "In this work, a novel predictive maintenance system is presented and applied to the main components of wind turbines. The proposed model is based on machine learning and statistical process control tools applied to SCADA (Supervisory Control And Data Acquisition) data of critical components. The test campaign was divided into two stages: a first two years long offline test, and a second one year l",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2510.15010": {
+    "id": "2510.15010",
+    "year": "2025",
+    "title": "Hybrid Autoencoder-Based Framework for Early Fault Detection in Wind Turbines",
+    "authors": [
+      "Rekha R Nair",
+      "Tina Babu",
+      "Alavikunhu Panthakkan",
+      "Balamurugan Balusamy",
+      "Wathiq Mansoor"
+    ],
+    "abstract": "Wind turbine reliability is critical to the growing renewable energy sector, where early fault detection significantly reduces downtime and maintenance costs. This paper introduces a novel ensemble-based deep learning framework for unsupervised anomaly detection in wind turbines. The method integrates Variational Autoencoders (VAE), LSTM Autoencoders, and Transformer architectures, each capturing ",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "1902.05625": {
+    "id": "1902.05625",
+    "year": "2019",
+    "title": "WaveletAE: A Wavelet-enhanced Autoencoder for Wind Turbine Blade Icing Detection",
+    "authors": [
+      "Binhang Yuan",
+      "Chen Wang",
+      "Chen Luo",
+      "Fei Jiang",
+      "Mingsheng Long",
+      "Philip S. Yu"
+    ],
+    "abstract": "Wind power, as an alternative to burning fossil fuels, is abundant and inexhaustible. To fully utilize wind power, wind farms are usually located in areas of high altitude and facing serious ice conditions, which can lead to serious consequences. Quick detection of blade ice accretion is crucial for the maintenance of wind farms. Unlike traditional methods of installing expensive physical detector",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2608.30323": {
+    "id": "2608.30323",
+    "year": "2026",
+    "title": "Generative multi-domain transfer learning for fault detection in data-scarce wind turbines",
+    "authors": [
+      "Stefan Jonas",
+      "Angela Meyer"
+    ],
+    "abstract": "Normal behavior models have shown promise for reliable fault detection in wind turbines. However, these unsupervised anomaly detection models require sufficient fault-free training data to learn the normal operation behavior of turbines. Under data scarcity, for example in newly deployed wind turbines, these models may result in poor fault detection performance. In this work, we propose a multi-do",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2012.10489": {
+    "id": "2012.10489",
+    "year": "2020",
+    "title": "XAI4Wind: A Multimodal Knowledge Graph Database for Explainable Decision Support in Operations & Maintenance of Wind Turbines",
+    "authors": [
+      "Joyjit Chatterjee",
+      "Nina Dethlefs"
+    ],
+    "abstract": "Condition-based monitoring (CBM) has been widely utilised in the wind industry for monitoring operational inconsistencies and failures in turbines, with techniques ranging from signal processing and vibration analysis to artificial intelligence (AI) models using Supervisory Control & Acquisition (SCADA) data. However, existing studies do not present a concrete basis to facilitate explainable decis",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2506.13012": {
+    "id": "2506.13012",
+    "year": "2025",
+    "title": "Condition Monitoring with Machine Learning: A Data-Driven Framework for Quantifying Wind Turbine Energy Loss",
+    "authors": [
+      "Emil Marcus Buchberg",
+      "Kent Vugs Nielsen"
+    ],
+    "abstract": "Wind energy significantly contributes to the global shift towards renewable energy, yet operational challenges, such as Leading-Edge Erosion on wind turbine blades, notably reduce energy output. This study introduces an advanced, scalable machine learning framework for condition monitoring of wind turbines, specifically targeting improved detection of anomalies using Supervisory Control and Data A",
+    "query": "abs:\"SCADA\" AND abs:\"anomaly\" AND abs:\"wind\""
+  },
+  "2409.13053": {
+    "id": "2409.13053",
+    "year": "2024",
+    "title": "Towards Unbiased Evaluation of Time-series Anomaly Detector",
+    "authors": [
+      "Debarpan Bhattacharya",
+      "Sumanta Mukherjee",
+      "Chandramouli Kamanchi",
+      "Vijay Ekambaram",
+      "Arindam Jati",
+      "Pankaj Dayama"
+    ],
+    "abstract": "Time series anomaly detection (TSAD) is an evolving area of research motivated by its critical applications, such as detecting seismic activity, sensor failures in industrial plants, predicting crashes in the stock market, and so on. Across domains, anomalies occur significantly less frequently than normal data, making the F1-score the most commonly adopted metric for anomaly detection. However, i",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2305.09691": {
+    "id": "2305.09691",
+    "year": "2023",
+    "title": "Evaluation Strategy of Time-series Anomaly Detection with Decay Function",
+    "authors": [
+      "Yongwan Gim",
+      "Kyushik Min"
+    ],
+    "abstract": "Recent algorithms of time-series anomaly detection have been evaluated by applying a Point Adjustment (PA) protocol. However, the PA protocol has a problem of overestimating the performance of the detection algorithms because it only depends on the number of detected abnormal segments and their size. We propose a novel evaluation protocol called the Point-Adjusted protocol with decay function (PAd",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2603.18985": {
+    "id": "2603.18985",
+    "year": "2026",
+    "title": "Revisiting OmniAnomaly for Anomaly Detection: performance metrics and comparison with PCA-based models",
+    "authors": [
+      "Bruna Alves",
+      "Ana Martins",
+      "Armando J. Pinho",
+      "Sónia Gouveia"
+    ],
+    "abstract": "Deep learning models have become the dominant approach for multivariate time series anomaly detection (MTSAD), often reporting substantial performance improvements over classical statistical methods. However, these gains are frequently evaluated under heterogeneous thresholding strategies and evaluation protocols, making fair comparisons difficult. This work revisits OmniAnomaly, a widely used sto",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2109.05257": {
+    "id": "2109.05257",
+    "year": "2021",
+    "title": "Towards a Rigorous Evaluation of Time-series Anomaly Detection",
+    "authors": [
+      "Siwon Kim",
+      "Kukjin Choi",
+      "Hyun-Soo Choi",
+      "Byunghan Lee",
+      "Sungroh Yoon"
+    ],
+    "abstract": "In recent years, proposed studies on time-series anomaly detection (TAD) report high F1 scores on benchmark TAD datasets, giving the impression of clear improvements in TAD. However, most studies apply a peculiar evaluation protocol called point adjustment (PA) before scoring. In this paper, we theoretically and experimentally reveal that the PA protocol has a great possibility of overestimating t",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2511.18739": {
+    "id": "2511.18739",
+    "year": "2025",
+    "title": "A Problem-Oriented Taxonomy of Evaluation Metrics for Time Series Anomaly Detection",
+    "authors": [
+      "Kaixiang Yang",
+      "Jiarong Liu",
+      "Yupeng Song",
+      "Shuanghua Yang",
+      "Yujue Zhou"
+    ],
+    "abstract": "Time series anomaly detection is widely used in IoT and cyber-physical systems, yet its evaluation remains challenging due to diverse application objectives and heterogeneous metric assumptions. This study introduces a problem-oriented framework that reinterprets existing metrics based on the specific evaluation challenges they are designed to address, rather than their mathematical forms or outpu",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2308.13068": {
+    "id": "2308.13068",
+    "year": "2023",
+    "title": "Multivariate Time Series Anomaly Detection: Fancy Algorithms and Flawed Evaluation Methodology",
+    "authors": [
+      "Mohamed El Amine Sehili",
+      "Zonghua Zhang"
+    ],
+    "abstract": "Multivariate Time Series (MVTS) anomaly detection is a long-standing and challenging research topic that has attracted tremendous research effort from both industry and academia recently. However, a careful study of the literature makes us realize that 1) the community is active but not as organized as other sibling machine learning communities such as Computer Vision (CV) and Natural Language Pro",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2609.39489": {
+    "id": "2609.39489",
+    "year": "2026",
+    "title": "Towards Robust Time Series Learning via Capacity-Centric Modulation",
+    "authors": [
+      "Siru Zhong",
+      "Senzhang Wang",
+      "James T. Kwok",
+      "Yuxuan Liang"
+    ],
+    "abstract": "Sample-level reliability heterogeneity is common in deep time series learning. Standard training pipelines apply a uniform regularization setting to all samples, which can under-regularize corrupted samples and over-restrict clean samples. Common robustness approaches filter observations in data space or impose priors on latent representations. We propose Capacity-Centric Modulation (CCM) as a com",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2311.11235": {
+    "id": "2311.11235",
+    "year": "2023",
+    "title": "Unraveling the \"Anomaly\" in Time Series Anomaly Detection: A Self-supervised Tri-domain Solution",
+    "authors": [
+      "Yuting Sun",
+      "Guansong Pang",
+      "Guanhua Ye",
+      "Tong Chen",
+      "Xia Hu",
+      "Hongzhi Yin"
+    ],
+    "abstract": "The ongoing challenges in time series anomaly detection (TSAD), notably the scarcity of anomaly labels and the variability in anomaly lengths and shapes, have led to the need for a more efficient solution. As limited anomaly labels hinder traditional supervised models in TSAD, various SOTA deep learning techniques, such as self-supervised learning, have been introduced to tackle this issue. Howeve",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2405.12096": {
+    "id": "2405.12096",
+    "year": "2024",
+    "title": "PATE: Proximity-Aware Time series anomaly Evaluation",
+    "authors": [
+      "Ramin Ghorbani",
+      "Marcel J. T. Reinders",
+      "David M. J. Tax"
+    ],
+    "abstract": "Evaluating anomaly detection algorithms in time series data is critical as inaccuracies can lead to flawed decision-making in various domains where real-time analytics and data-driven strategies are essential. Traditional performance metrics assume iid data and fail to capture the complex temporal dynamics and specific characteristics of time series anomalies, such as early and delayed detections.",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2607.11969": {
+    "id": "2607.11969",
+    "year": "2026",
+    "title": "Did We Actually Fix It? An Independent Adversarial Stress-Test of Post-Point-Adjustment Evaluation Metrics for Time-Series Anomaly Detection",
+    "authors": [
+      "Zongye Lyu"
+    ],
+    "abstract": "Point-adjustment (PA), for years the default scoring protocol in time-series anomaly detection (TSAD), was shown by Kim et al. (2022) to award near-perfect F1 to random anomaly scores. The field adopted a suite of replacement metrics (PA%K, range-based precision/recall, affiliation precision/recall, and Volume-Under-the-Surface, VUS, ROC/PR). We ask, independently and adversarially, whether these ",
+    "query": "abs:\"point adjustment\" AND abs:\"anomaly detection\""
+  },
+  "2501.02069": {
+    "id": "2501.02069",
+    "year": "2025",
+    "title": "Counterfactual Explanation for Auto-Encoder Based Time-Series Anomaly Detection",
+    "authors": [
+      "Abhishek Srinivasan",
+      "Varun Singapuri Ravi",
+      "Juan Carlos Andresen",
+      "Anders Holst"
+    ],
+    "abstract": "The complexity of modern electro-mechanical systems require the development of sophisticated diagnostic methods like anomaly detection capable of detecting deviations. Conventional anomaly detection approaches like signal processing and statistical modelling often struggle to effectively handle the intricacies of complex systems, particularly when dealing with multi-variate signals. In contrast, n",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2510.00680": {
+    "id": "2510.00680",
+    "year": "2025",
+    "title": "TShape: Rescuing Machine Learning Models from Complex Shapelet Anomalies",
+    "authors": [
+      "Hang Cui",
+      "Jingjing Li",
+      "Haotian Si",
+      "Quan Zhou",
+      "Changhua Pei",
+      "Gaogang Xie"
+    ],
+    "abstract": "Time series anomaly detection (TSAD) is critical for maintaining the reliability of modern IT infrastructures, where complex anomalies frequently arise in highly dynamic environments. In this paper, we present TShape, a novel framework designed to address the challenges in industrial time series anomaly detection. Existing methods often struggle to detect shapelet anomalies that manifest as comple",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2605.09081": {
+    "id": "2605.09081",
+    "year": "2026",
+    "title": "FactoryNet: A Large-Scale Dataset toward Industrial Time-Series Foundation Models",
+    "authors": [
+      "Karim Othman",
+      "Jonas Petersen",
+      "Matei Ignuta-Ciuncanu",
+      "Camilla Mazzoleni",
+      "Federico Martelli",
+      "Alessandro Lombardi"
+    ],
+    "abstract": "We introduce the first universal pretraining corpus for industrial time-series data: FactoryNet. 51M datapoints across 23k end-to-end task executions (13.3k real, 9.8k synthetic) on six embodiments, unified by a shared schema that enables robust zero-shot cross-embodiment transfer and highly parameter-efficient anomaly detection. We introduce a novel schema: Setpoint, Effort, Feedback, Context (S-",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2207.00705": {
+    "id": "2207.00705",
+    "year": "2022",
+    "title": "Multivariate Time Series Anomaly Detection with Few Positive Samples",
+    "authors": [
+      "Feng Xue",
+      "Weizhong Yan"
+    ],
+    "abstract": "Given the scarcity of anomalies in real-world applications, the majority of literature has been focusing on modeling normality. The learned representations enable anomaly detection as the normality model is trained to capture certain key underlying data regularities under normal circumstances. In practical settings, particularly industrial time series anomaly detection, we often encounter situatio",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2501.16744": {
+    "id": "2501.16744",
+    "year": "2025",
+    "title": "LLM Assisted Anomaly Detection Service for Site Reliability Engineers: Enhancing Cloud Infrastructure Resilience",
+    "authors": [
+      "Nimesh Jha",
+      "Shuxin Lin",
+      "Srideepika Jayaraman",
+      "Kyle Frohling",
+      "Christodoulos Constantinides",
+      "Dhaval Patel"
+    ],
+    "abstract": "This paper introduces a scalable Anomaly Detection Service with a generalizable API tailored for industrial time-series data, designed to assist Site Reliability Engineers (SREs) in managing cloud infrastructure. The service enables efficient anomaly detection in complex data streams, supporting proactive identification and resolution of issues. Furthermore, it presents an innovative approach to a",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2510.26159": {
+    "id": "2510.26159",
+    "year": "2025",
+    "title": "Segmentation over Complexity: Evaluating Ensemble and Hybrid Approaches for Anomaly Detection in Industrial Time Series",
+    "authors": [
+      "Emilio Mastriani",
+      "Alessandro Costa",
+      "Federico Incardona",
+      "Kevin Munari",
+      "Sebastiano Spinello"
+    ],
+    "abstract": "In this study, we investigate the effectiveness of advanced feature engineering and hybrid model architectures for anomaly detection in a multivariate industrial time series, focusing on a steam turbine system. We evaluate the impact of change point-derived statistical features, clustering-based substructure representations, and hybrid learning strategies on detection performance. Despite their th",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2604.13928": {
+    "id": "2604.13928",
+    "year": "2026",
+    "title": "Unsupervised Anomaly Detection in Process-Complex Industrial Time Series: A Real-World Case Study",
+    "authors": [
+      "Sergej Krasnikov",
+      "Lukas Meitz",
+      "Samineh Bagheri",
+      "Michael Heider",
+      "Thorsten Schöler",
+      "Jörg Hähner"
+    ],
+    "abstract": "Industrial time-series data from real production environments exhibits substantially higher complexity than commonly used benchmark datasets, primarily due to heterogeneous, multi-stage operational processes. As a result, anomaly detection methods validated under simplified conditions often fail to generalize to industrial settings. This work presents an empirical study on a unique dataset collect",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2405.08349": {
+    "id": "2405.08349",
+    "year": "2024",
+    "title": "Model-Free Unsupervised Anomaly Detection Framework in Multivariate Time-Series of Industrial Dynamical Systems",
+    "authors": [
+      "Mazen Alamir",
+      "Raphaël Dion"
+    ],
+    "abstract": "In this paper, a new model-free anomaly detection framework is proposed for time-series induced by industrial dynamical systems.The framework lies in the category of conventional approaches which enable appealing features such as a learning with reduced amount of training data, a high potential for explainability as well as a compatibility with incremental learning mechanism to incorporate operato",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2012.14555": {
+    "id": "2012.14555",
+    "year": "2020",
+    "title": "Misplaced Subsequences Repairing with Application to Multivariate Industrial Time Series Data",
+    "authors": [
+      "Xiaoou Ding",
+      "Hongzhi Wang",
+      "Jiaxuan Su",
+      "Chen Wang"
+    ],
+    "abstract": "Both the volume and the collection velocity of time series generated by monitoring sensors are increasing in the Internet of Things (IoT). Data management and analysis requires high quality and applicability of the IoT data. However, errors are prevalent in original time series data. Inconsistency in time series is a serious data quality problem existing widely in IoT. Such problem could be hardly",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  },
+  "2302.08712": {
+    "id": "2302.08712",
+    "year": "2023",
+    "title": "Quantile LSTM: A Robust LSTM for Anomaly Detection In Time Series Data",
+    "authors": [
+      "Snehanshu Saha",
+      "Jyotirmoy Sarkar",
+      "Soma Dhavala",
+      "Santonu Sarkar",
+      "Preyank Mota"
+    ],
+    "abstract": "Anomalies refer to the departure of systems and devices from their normal behaviour in standard operating conditions. An anomaly in an industrial device can indicate an upcoming failure, often in the temporal direction. In this paper, we make two contributions: 1) we estimate conditional quantiles and consider three different ways to define anomalies based on the estimated quantiles. 2) we use a n",
+    "query": "abs:\"industrial time series\" AND abs:\"anomaly detection\""
+  }
+}

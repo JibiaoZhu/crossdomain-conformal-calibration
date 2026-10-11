@@ -1,0 +1,198 @@
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Setup Recap}
+Each fold trains one encoder on pooled source-normal windows (3 seeds, 4000 steps) and evaluates all four calibration mechanisms post hoc on the same scores and divergence traces, at nominal levels $\alphaNom\in\{0.05,0.10,0.20,0.30\}$. This design isolates the calibration layer: training is independent of the thresholding mechanism, so differences between mechanisms are not confounded by retraining. Evaluation windows per fold are listed in Table~\ref{tab:datasets}; labels and protocols per Section~\ref{sec:protocols}.
+
+\subsection{Static Thresholds Fail in Both Directions; ACI Restores Coverage}
+Table~\ref{tab:main} reports normal-window coverage at $\alphaNom=0.10$ (nominal $0.90$) and the mean coverage gap across the four nominal levels, averaged over seeds. Static source thresholds fail on every fold, and the failures are not small: on F2 (wind) coverage collapses to $0.18$---the source threshold over-alarms normal operation almost constantly---while the other five folds sit at $0.989$--$0.999$, i.e., the threshold is too high and alarms almost never fire. A single source-calibrated number is thus not merely imprecise; it is unusable in practice in opposite directions on different target domains.
+
+Online ACI repairs this on five of six folds: mean gaps of $0.006$--$0.015$ (F1, F2, F4, F5, F6) against $0.077$--$0.523$ for static. Bootstrap 95\% intervals for the ACI gap are at most $[0.000,0.020]$; for the static gap they reach $[0.703,0.726]$ on F2. The one exception is F3 (solar, synthetic injection): every mechanism stays at coverage $\approx 0.998$. This is the alarm-budget effect defined in Section~\ref{sec:setup-metrics}: F3's evaluation windows contain 20\% strongly separable injected anomalies, and once ACI has spent the alarm budget on them (87\% of injected runs detected, median delay 0), the normal-window FPR is driven to nearly zero. Coverage on F3 therefore over-shoots, and we read F3 as a synthetic-anomaly stress case rather than a calibration success. Figure~\ref{fig:coverage} shows the full $\alphaNom$-sweep; the nominal line is tracked on five folds and missed on F3 for the stated reason.
+
+\begin{table}[t]
+\caption{Normal-window coverage at $\alphaNom{=}0.10$ (nominal 0.90, mean of 3 seeds), per-fold AUROC, and mean coverage gap across $\alphaNom\in\{0.05,0.10,0.20,0.30\}$. Best per row in bold. $\dagger$ below-chance ranking: excluded from detection-quality claims. $\ddagger$ synthetic-only fold (F3); its over-coverage stems from the alarm budget being consumed by separable injected anomalies.}
+\label{tab:main}
+\centering
+\small
+\begin{tabular}{lccccccc}
+\toprule
+ & & \multicolumn{4}{c}{Coverage @ 0.10} & \multicolumn{2}{c}{Mean gap} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-8}
+Fold & AUROC & Static & ACI & Shift & Mondrian & Static & ACI \\
+\midrule
+F1 & 0.63 & 0.989 & 0.899 & 0.899 & 0.911 & 0.077 & \textbf{0.009} \\
+F2$^\dagger$ & 0.39 & 0.183 & 0.890 & 0.890 & 0.871 & 0.523 & \textbf{0.010} \\
+F3$^\ddagger$ & 0.79 & 0.999 & 0.998 & 0.998 & 0.999 & 0.160 & 0.105 \\
+F4 & 0.99 & 0.999 & 0.910 & 0.908 & 0.920 & 0.160 & \textbf{0.010} \\
+F5$^\dagger$ & 0.37 & 0.994 & 0.899 & 0.899 & 0.904 & 0.351 & \textbf{0.006} \\
+F6 & 0.78 & 0.998 & 0.915 & 0.915 & 0.929 & 0.082 & \textbf{0.015} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_coverage_alpha.pdf}
+\caption{Normal-window coverage versus nominal level $\alphaNom$ per fold (mean over seeds). Dashed line: nominal $1-\alphaNom$. Static thresholds fail in both directions; ACI tracks the nominal level on five folds. F3 (injected synthetic anomalies) over-covers because the alarm budget is consumed by separable anomalies.}
+\label{fig:coverage}
+\end{figure*}
+
+\subsection{The Alarm-Budget Defect and NA-ACI}
+\label{sec:na-aci-results}
+On anomaly-rich folds, plain ACI spends its alarm budget on anomalies and over-covers normal windows: at $\alphaNom{=}0.10$, F3's normal-window FPR is $0.002$ (ACI detects 39\% of injected anomalies), F4's anomaly detection rate is only $0.12$ while its FPR sits at the nominal $0.09$, and F6 detects $19\%$. Normal-anchored ACI (Section~\ref{sec:na-aci}) reallocates the budget: with $\kappa{=}3$, F4 detection rises to $0.90$ at FPR $0.094$, F6 to $0.29$ at $0.094$, F3 to $0.51$ at $0.026$, and F5 from $0.11$ to $0.16$ detection at unchanged FPR. Table~\ref{tab:na} summarizes calibration gaps, FPR, detection rates, and range-$F_1$. Across all folds and nominal levels, mean range-$F_1$ improves from $0.265$ (ACI) to $0.389$ ($\kappa{=}3$; $0.370$ at $\kappa{=}5$) while the mean coverage gap stays comparable ($0.026$ vs.\ $0.029$ at $\kappa{=}3$, and improves to $0.020$ at $\kappa{=}5$); anomaly-sparse folds F1/F2 are unchanged at $\kappa{=}5$ and mildly worse at $\kappa{=}3$ (F2 gap $0.010\!\to\!0.058$), exposing the expected $\kappa$ trade-off: aggressive exclusion risks excluding normal windows during scale drift and over-alarms. $\kappa$ is the method's only new hyper-parameter and can be validated online by monitoring the exclusion rate; we default to $\kappa{=}5$ when anomaly prevalence is low or unknown, $\kappa{=}3$ when prevalence is high.
+
+\begin{table}[t]
+\caption{Alarm-budget defect and NA-ACI at $\alphaNom{=}0.10$ (3 seeds). Mean gap is over four nominal levels. NA-ACI reallocates alarms to anomalies (columns Det.) at comparable normal-window FPR, with large range-$F_1$ gains on anomaly-rich folds; $\kappa{=}3$ is aggressive, $\kappa{=}5$ conservative.}
+\label{tab:na}
+\centering
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{2}{c}{ACI} & \multicolumn{3}{c}{NA-ACI $\kappa{=}3$} & \multicolumn{3}{c}{NA-ACI $\kappa{=}5$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Fold & FPR/Det. & R-$F_1$ & FPR/Det. & gap & R-$F_1$ & FPR/Det. & gap & R-$F_1$ \\
+\midrule
+F1 & .101/.065 & 0.07 & .105/.066 & 0.060 & 0.07 & .102/.065 & 0.012 & 0.07 \\
+F2$^\dagger$ & .110/.136 & 0.13 & .137/.159 & 0.058 & 0.14 & .124/.148 & 0.031 & 0.14 \\
+F3$^\ddagger$ & .002/.389 & 0.56 & .026/.512 & 0.044 & 0.63 & .019/.506 & 0.058 & 0.64 \\
+F4 & .090/.118 & 0.19 & .094/.895 & 0.005 & 0.88 & .092/.715 & 0.006 & 0.77 \\
+F5$^\dagger$ & .101/.106 & 0.19 & .101/.158 & 0.006 & 0.26 & .101/.138 & 0.006 & 0.24 \\
+F6 & .085/.193 & 0.26 & .094/.289 & 0.004 & 0.36 & .093/.285 & 0.005 & 0.36 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Calibration Baselines and Update-Rate Ablation}
+\label{sec:variants}
+Table~\ref{tab:baselines} compares ACI against rolling-quantile tracking, an extreme-value (GPD/POT) static threshold \cite{siffer2017}, and slower ACI updates at $\alphaNom=0.10$ (seed 0; seed trends identical). Rolling-quantile tracking under-covers on every fold ($0.851$--$0.930$): without coverage feedback, a windowed empirical quantile cannot keep pace with the shifting score scale. The extreme-value tail fit inherits the static failure exactly, because it is calibrated on source scores. Slower updates degrade progressively---updating every 20th window collapses F2 to $0.699$---which justifies the per-window update of Equation~\ref{eq:aci}; we also verified that larger gains trade short-interval stability for no long-run benefit, and we approximate the DtACI-style dual update \cite{dtaci2022} with these variants.
+
+\begin{table}[t]
+\caption{Thresholding baselines at $\alphaNom{=}0.10$ (seed 0, coverage). EVT/POT is calibrated on source scores and coincides with static. ACI updates per window; $k$ denotes update every $k$-th window.}
+\label{tab:baselines}
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Fold & Rolling-$q$ & EVT/POT & ACI $k{=}20$ & ACI $k{=}5$ & \textbf{ACI} \\
+\midrule
+F1 & 0.857 & 0.990 & 0.973 & 0.908 & \textbf{0.897} \\
+F2 & 0.859 & 0.185 & 0.699 & 0.858 & \textbf{0.890} \\
+F3 & 0.930 & 0.999 & 0.999 & 0.999 & \textbf{0.998} \\
+F4 & 0.898 & 0.999 & 0.997 & 0.930 & \textbf{0.910} \\
+F5 & 0.851 & 0.995 & 0.928 & 0.910 & \textbf{0.899} \\
+F6 & 0.909 & 0.999 & 0.942 & 0.934 & \textbf{0.915} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Divergence-Shifted and Conditional Variants: No Gain}
+Both target-aware refinements fail to improve on plain ACI. The divergence-shifted threshold (Section~\ref{sec:method}) is statistically indistinguishable from ACI on every fold and nominal level (coverage differences $\leq 0.002$, far below the seed spread), and we therefore report no added value rather than equivalence: the ACI feedback term itself absorbs the score-scale change the divergence term was meant to anticipate. Mondrian ACI shows no improvement either; its point-estimate mean gaps are up to roughly twice ACI's ($0.012$--$0.124$ vs $0.006$--$0.105$), and we note that this comparison is descriptive---with three seeds per fold we do not claim significance on the small differences. Splitting the calibration stream into divergence regimes shrinks each regime's feedback sample more than the conditional targeting gains. Figure~\ref{fig:coverage} includes both variants; we report them as negative controls rather than contributions.
+
+\subsection{Transfer Cost Is Real but Not Predicted by Divergence}
+\label{sec:transfer}
+Keeping coverage across domains is not free. Mean interval inflation at $\alphaNom=0.10$ spans two orders of magnitude across folds: $0.5\times$--$0.6\times$ (F1, F3), $1.3\times$ (F5), $2.9$--$3.1\times$ (F4), $10.5$--$11.0\times$ (F2), and $17.8$--$19.2\times$ (F6)---the XJTU-SY target needs a threshold roughly twenty times the source quantile to hold its coverage. Figure~\ref{fig:operational} shows the inflation bars and exemplar threshold traces: on F2 the static threshold sits orders of magnitude below the target score scale (hence the $0.18$ coverage), while ACI ramps $\qt$ into the target regime; on F6 the trace climbs steadily as the quantile tracks the shifting scores.
+
+The divergence hypothesis, however, does not survive: across folds and seeds, mean band divergence $\Dbar$ and inflation show no reliable association, with Pearson $r\in\{0.13,0.19,0.26,0.30\}$ for $\alphaNom\in\{0.10,0.05,0.20,0.30\}$ ($n{=}18$ per level, all $p>0.22$). An earlier smaller-sample estimate ($n{=}8$) had suggested a borderline correlation; with three seeds it vanishes. Given the small sample, we treat this as evidence against a strong predictive claim rather than a precise null estimate: we keep inflation as a descriptive transfer-cost diagnostic and drop the claim that divergence anticipates it.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_operational.pdf}
+\caption{Left: interval inflation $\overline{\qt}/\qsrc$ per fold ($\alphaNom{=}0.10$, log scale). Right: threshold traces on F2 and F6 (static vs ACI, seed 0). Static thresholds are mis-scaled in opposite directions; ACI tracks the target regime.}
+\label{fig:operational}
+\end{figure}
+
+\subsection{Calibration and Detection Quality Decouple}
+\label{sec:decoupling}
+AUROC per fold spans the full unusable-to-strong range: $0.63$ (F1), $0.39$ (F2), $0.79$ (F3), $0.99$ (F4), $0.35$--$0.40$ (F5), $0.78$ (F6), with per-seed spread below $0.02$. Two folds rank anomalies \emph{below} chance. We diagnosed both: on F2 and F5, simple feature baselines---window RMS, low-band and high-band energies---also score below $0.5$ (F2: $0.41/0.45/0.37$; F5: $0.36/0.39/0.33$), while the F6 control scores $0.72$--$0.82$ on the same features. The inversion is a property of these datasets under their labeling protocols (fault-labeled periods carry systematically lower amplitude/spectral statistics in this windowing), not a failure unique to our encoder; no repair within our protocol is available, and we therefore \textbf{exclude F2 and F5 from detection-quality claims}. Figure~\ref{fig:decoupling} makes the decoupling explicit: ACI's coverage gap stays near nominal even at AUROC $<0.5$---coverage control is a statement about the threshold, not about the usefulness of the alarms. \textbf{Calibration cannot rescue an anti-correlated ranker}; deployments must audit ranking first (our feature-baseline check is a two-line diagnostic) and only then trust calibrated coverage as a reliability statement.
+
+Detection-side numbers, reported for the four trustworthy folds, are consistent with the coverage picture: false-alarm rates at $\alphaNom{=}0.10$ sit at $85$--$110$ per 1000 normal windows on F1/F2/F4/F5/F6 (F3: $2.3$), and detection delays on F1/F4/F6 are $1$--$2$ windows (F5's single run is detected after 49 windows). The synthetic F3 study is stable under contamination: AUROC stays within $0.73$--$0.83$ for injection fractions $\{0.05,0.10,0.20,0.40\}$ across seeds.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\columnwidth]{fig_decoupling.pdf}
+\caption{Calibration versus discrimination: ACI mean coverage gap (four nominal levels) against AUROC for every fold and seed. Below-chance folds (F2, F5) remain coverage-controllable, but their alarms carry no detection utility---an explicit caveat, not a success.}
+\label{fig:decoupling}
+\end{figure}
+
+\subsection{Calibration Conclusions Are Not Encoder-Specific}
+\label{sec:alt-scores}
+To test whether the calibration findings depend on our neural encoder, we repeated the comparison on folds F1/F4/F6 with two non-neural score producers: PCA reconstruction (32 components on flattened windows) and a Mahalanobis distance on 16-dimensional band-energy features. Table~\ref{tab:alt} reports mean coverage gaps across the four nominal levels. Static calibration fails for these producers as well---including both failure directions \emph{within} the feature-based producer (F4 over-alarms at coverage $0.06$; F6 never alarms at $0.000$)---while ACI restores gaps to at most $0.011$ in all six producer--fold combinations, even when the producer's ranking is below chance (F1 Mahalanobis, AUROC $0.47$). The calibration layer is agnostic to score provenance, and the decoupling caveat of Section~\ref{sec:decoupling} applies equally to classical detectors.
+
+We further evaluate a \emph{zero-shot time-series foundation model} as an external score producer: Chronos-bolt-small \cite{chronos2024}, scored by its $32$-step forecast residuals (context $224$; median quantile; $4{,}000$ stratified evaluation windows per fold, same splits and injection protocol). Table~\ref{tab:chronos} reports the outcome. The pattern replicates in full: static calibration fails on every fold and in both directions (mean gaps $0.066$--$0.571$); ACI restores gaps to $0.009$--$0.048$; NA-ACI improves further where the budget defect bites (F3: $0.048\!\to\!0.035$, F6: $0.028\!\to\!0.014$; F4 range-$F_1$ $0.27\!\to\!0.39$ with $\kappa{=}3$). Two findings stand out. First, Chronos-bolt ranks anomalies \emph{below chance on the same two folds} as our encoder (F2 AUROC $0.34$, F5 $0.32$), which strongly supports reading the inversion as a dataset/label property rather than an encoder artifact. Second, our $1.3$M-parameter reconstruction encoder matches or exceeds the zero-shot foundation model on AUROC in all six folds (e.g., F3 $0.79$ vs.\ $0.65$, F4 $0.99$ vs.\ $0.94$), consistent with recent evidence that generic foundation models are not automatically superior on shifted industrial series \cite{freqmatters2025,foundational2025}.
+
+\begin{table}[t]
+\caption{Zero-shot Chronos-bolt-small external score producer (forecast-residual scores; 4{,}000 stratified windows per fold). Static fails both ways; ACI restores coverage; NA-ACI tracks the budget defect. AUROC below $0.5$ on F2/F5 matches our encoder---a data/label property, not an encoder artifact.}
+\label{tab:chronos}
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Fold & AUROC & Static gap & ACI gap & NA-ACI gap & R-$F_1$ ACI & R-$F_1$ NA \\
+\midrule
+F1 & 0.63 & 0.124 & 0.032 & 0.037 ($\kappa{=}5$) & 0.09 & 0.10 \\
+F2 & 0.34 & 0.571 & 0.015 & 0.041 ($\kappa{=}5$) & 0.13 & 0.13 \\
+F3 & 0.65 & 0.139 & 0.048 & 0.035 ($\kappa{=}5$) & 0.30 & 0.30 \\
+F4 & 0.94 & 0.066 & 0.009 & 0.006 ($\kappa{=}5$) & 0.27 & 0.39 \\
+F5 & 0.32 & 0.324 & 0.012 & 0.012 ($\kappa{=}5$) & 0.25 & 0.28 \\
+F6 & 0.74 & 0.098 & 0.028 & 0.014 ($\kappa{=}5$) & 0.37 & 0.40 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\caption{Mean coverage gap over four nominal levels for non-neural score producers (static vs.\ ACI). ACI restores coverage in every combination; static fails, including in both directions within the Mahalanobis producer.}
+\label{tab:alt}
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Producer & F1 & F4 & F6 \\
+\midrule
+PCA reconstruction (static / ACI)   & 0.154 / \textbf{0.002} & 0.153 / \textbf{0.004} & 0.163 / \textbf{0.011} \\
+Mahalanobis band (static / ACI)     & 0.546 / \textbf{0.004} & 0.798 / \textbf{0.002} & 0.838 / \textbf{0.003} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Comparison with Rival Cross-Domain Detectors (Mechanism-Level)}
+\label{sec:rivals}
+Because the official codebases of CICADA \cite{cicada2025} and DACAD \cite{dacad2024} target different benchmarks, we reimplement their core mechanisms under our six-fold protocol and label the comparison accordingly: a \emph{DACAD-style} scorer (anomaly injection + discriminative head + source--target moment alignment) and a \emph{CICADA-style} scorer (four reconstruction experts over source groups with divergence-based expert weighting). Table~\ref{tab:rivals} reports ranking quality and calibration. Three observations. First, the calibration result is universal: static thresholds fail for both rivals on every fold (mean gaps $0.037$--$0.499$, including DACAD-style F2 at $0.037$ and CICADA-style F2 at $0.499$), ACI restores them to $0.001$--$0.101$, and NA-ACI helps where the budget defect bites (CICADA-style F3 gap $0.101\!\to\!0.059$; F4 range-$F_1$ $0.24\!\to\!0.72$). Second, ranking quality of the rivals is unstable across domains---DACAD-style ranges from AUROC $0.26$ (F4) to $0.85$ (F3), and CICADA-style from $0.32$ (F5) to $0.99$ (F4)---so neither is a reliable default. Third, no scorer dominates: our plain encoder matches the best rival on F1/F4/F6 and trails on F2/F3/F5, while every scorer's ranking swings across folds (ours $0.37$--$0.99$, DACAD-style $0.26$--$0.85$, CICADA-style $0.32$--$0.99$)---supporting calibration as the first-order problem for deployment, with ranking left fold-dependent.
+
+\begin{table}[t]
+\caption{Mechanism-level rival comparison (6 folds). AUROC per scorer; mean coverage gap static\,$\to$\,ACI; range-$F_1$ (mean over levels) for ACI and NA-ACI. Static fails for both rivals; ACI restores; rival rankings are unstable across folds. Best per-row AUROC in bold.}
+\label{tab:rivals}
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{AUROC} & \multicolumn{2}{c}{Gap (static$\to$ACI)} & R-$F_1$ \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Fold & Ours & DACAD* & CICADA* & DACAD* & CICADA* & NA gain \\
+\midrule
+F1 & \textbf{0.63} & 0.60 & 0.62 & .065$\to$.003 & .075$\to$.006 & --- \\
+F2 & 0.39 & \textbf{0.49} & 0.35 & .037$\to$.003 & .499$\to$.010 & --- \\
+F3 & 0.79 & \textbf{0.85} & 0.84 & .155$\to$.093 & .155$\to$.101 & 0.59 (k5) \\
+F4 & 0.99 & 0.26 & \textbf{0.99} & .064$\to$.002 & .158$\to$.006 & 0.24$\to$0.72 \\
+F5 & 0.37 & \textbf{0.59} & 0.32 & .076$\to$.002 & .238$\to$.004 & 0.26$\to$0.27 \\
+F6 & 0.78 & 0.53 & \textbf{0.78} & .143$\to$.001 & .133$\to$.011 & 0.26$\to$0.34 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Runtime, Memory, and Negative Controls}
+\label{sec:neg-controls}
+The calibration layer is cheap: across all folds, training takes $\sim$70\,s, target scoring at most $0.41$\,s, and one ACI update costs $0.6$--$0.8\,\mu$s, with $26$\,MB peak GPU memory (Table~\ref{tab:runtime}). The thresholding mechanisms differ negligibly in cost. For completeness we record the negative controls from the predecessor study: spectral-invariance, relation-consistency, and band-saliency losses, low-rank test-time adaptation, and divergence-based source gating each changed range-$F_1$ by at most $2.2\%$ across four folds, and encoder identity (plain vs.\ regularized vs.\ gated) moves calibration coverage by at most $0.002$---which is why this paper studies the calibration layer rather than detector architecture.
+
+\begin{table}[t]
+\caption{Per-run cost (one fold, one seed; RTX 3060 Ti). ACI update latency measured over all evaluation windows and nominal levels.}
+\label{tab:runtime}
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+ & Train (s) & Score (s) & Update ($\mu$s) & Peak mem (MB) & Params \\
+\midrule
+Value & $\sim$70 & $\leq$0.41 & 0.6--0.8 & 26 & $\sim$1.3\,M \\
+\bottomrule
+\end{tabular}
+\end{table}

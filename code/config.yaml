@@ -1,0 +1,76 @@
+seed: 0
+repo_root: "G:/autosci-opencode"
+paths:
+  data_root: "E:/AutosciOpencodeProcessionDocument/datasets"
+  cache_dir: "E:/AutosciOpencodeProcessionDocument/datasets/_cache"
+data:
+  window: 256
+  stride: 128
+  n_bands: 8
+  max_windows_per_dataset: 20000
+  xjtu:
+    bearings:
+      - "35Hz12kN/Bearing1_1"
+      - "35Hz12kN/Bearing1_2"
+      - "35Hz12kN/Bearing1_3"
+      - "37.5Hz11kN/Bearing2_1"
+      - "40Hz10kN/Bearing3_1"
+    anomaly_fraction: 0.2
+  mfpt:
+    windows_per_segment: 12
+  phm16:
+    splits: ["training", "testing", "validation"]
+    channels: ["PRESSURIZED_CHAMBER_PRESSURE", "RETAINER_RING_PRESSURE"]
+    normal_quantile: 0.10
+  pv:
+    systems: ["2105_OEDI", "9068_OEDI"]
+    injection_fraction: 0.2
+  cwru:
+    normal_ids: [97, 98, 99, 100]
+    fault_ids: [105, 106, 107, 108, 118, 130, 169, 185]
+model:
+  patch_len: 64
+  patch_stride: 32
+  d_model: 64
+  n_heads: 4
+  e_layers: 2
+  d_ff: 128
+  dropout: 0.1
+train:
+  batch_size: 64
+  max_steps: 2000
+  lr: 0.0005
+  weight_decay: 0.01
+  lambda_inv: 0.1
+  lambda_rel: 0.1
+  lambda_sal: 0.1
+  amp: true
+  log_every: 200
+conformal:
+  alpha: 0.1
+  aci_gamma: 0.05
+  shift_lambda: 0.05
+  cal_ratio: 0.2
+  d_ref_size: 512
+tta:
+  rank: 4
+  steps: 150
+  lr: 0.001
+  windows: 1024
+gating:
+  tau: 1.0
+folds:
+  - {name: F1, target: phm16, sources: [pv, mfpt, xjtu]}
+  - {name: F3, target: pv, sources: [phm16, mfpt, xjtu]}
+  - {name: F5, target: mfpt, sources: [phm16, pv, xjtu]}
+  - {name: F6, target: xjtu, sources: [phm16, pv, mfpt, cwru]}
+variants:
+  - full
+  - no_f1
+  - no_f2
+  - no_f3
+  - no_f4
+  - no_f5
+  - no_f6
+  - fixed_conf
+  - none

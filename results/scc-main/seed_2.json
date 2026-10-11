@@ -1,0 +1,1454 @@
+{
+  "slug": "scc-main",
+  "seed": 2,
+  "smoke": false,
+  "folds": {
+    "F1": {
+      "target": "phm16",
+      "sources": [
+        "care",
+        "pv",
+        "cwru",
+        "paderborn",
+        "mfpt",
+        "xjtu"
+      ],
+      "run": {
+        "auroc": 0.6458850789311374,
+        "auprc": 0.16065114110585413,
+        "train": {
+          "loss_last_mean": 0.014128015008755029,
+          "nan": false,
+          "elapsed_sec": 69.7784173488617
+        },
+        "n_eval": 2163,
+        "n_eval_normal": 1912,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 0.0,
+            "range_recall": 0.0,
+            "range_f1": 0.0,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.0,
+            "alarm_rate": 0.0,
+            "q_source": 0.5245484709739685,
+            "d_mean": 0.6916345886909382
+          },
+          "aci_a0.05": {
+            "range_precision": 0.08,
+            "range_recall": 0.01593625498007968,
+            "range_f1": 0.026578073089700997,
+            "coverage": 0.9759414225941423,
+            "abs_coverage_gap": 0.025941422594142338,
+            "empirical_fpr_at_alpha": 0.02405857740585774,
+            "inflation": 0.19903220694828966,
+            "alarm_rate": 0.02311604253351826,
+            "q_source": 0.5245484709739685,
+            "d_mean": 0.6916345886909382
+          },
+          "shiftband_a0.05": {
+            "range_precision": 0.08,
+            "range_recall": 0.01593625498007968,
+            "range_f1": 0.026578073089700997,
+            "coverage": 0.9759414225941423,
+            "abs_coverage_gap": 0.025941422594142338,
+            "empirical_fpr_at_alpha": 0.02405857740585774,
+            "inflation": 0.20837346366089798,
+            "alarm_rate": 0.02311604253351826,
+            "q_source": 0.5245484709739685,
+            "d_mean": 0.6916345886909382
+          },
+          "mondrian_a0.05": {
+            "range_precision": 0.0,
+            "range_recall": 0.0,
+            "range_f1": 0.0,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 0.4635148697512835,
+            "alarm_rate": 0.0,
+            "q_source": 0.5245484709739685,
+            "d_mean": 0.6916345886909382,
+            "mondrian_per_bin_fpr": {
+              "0": 0.0,
+              "1": 0.0,
+              "2": 0.0
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.2,
+            "range_recall": 0.02390438247011952,
+            "range_f1": 0.042704626334519574,
+            "coverage": 0.9874476987447699,
+            "abs_coverage_gap": 0.08744769874476988,
+            "empirical_fpr_at_alpha": 0.012552301255230125,
+            "inflation": 1.0,
+            "alarm_rate": 0.013869625520110958,
+            "q_source": 0.04322375729680061,
+            "d_mean": 0.6916345886909382
+          },
+          "aci_a0.1": {
+            "range_precision": 0.09047619047619047,
+            "range_recall": 0.07569721115537849,
+            "range_f1": 0.0824295010845987,
+            "coverage": 0.9001046025104602,
+            "abs_coverage_gap": 0.00010460251046018332,
+            "empirical_fpr_at_alpha": 0.09989539748953975,
+            "inflation": 0.5074447557059724,
+            "alarm_rate": 0.0970873786407767,
+            "q_source": 0.04322375729680061,
+            "d_mean": 0.6916345886909382
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.08095238095238096,
+            "range_recall": 0.06772908366533864,
+            "range_f1": 0.0737527114967462,
+            "coverage": 0.8990585774058577,
+            "abs_coverage_gap": 0.000941422594142316,
+            "empirical_fpr_at_alpha": 0.10094142259414227,
+            "inflation": 0.5450866634965872,
+            "alarm_rate": 0.0970873786407767,
+            "q_source": 0.04322375729680061,
+            "d_mean": 0.6916345886909382
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.11891891891891893,
+            "range_recall": 0.08764940239043825,
+            "range_f1": 0.10091743119266056,
+            "coverage": 0.9147489539748954,
+            "abs_coverage_gap": 0.014748953974895396,
+            "empirical_fpr_at_alpha": 0.0852510460251046,
+            "inflation": 0.5556023793542351,
+            "alarm_rate": 0.08552935737401757,
+            "q_source": 0.04322375729680061,
+            "d_mean": 0.6916345886909382,
+            "mondrian_per_bin_fpr": {
+              "0": 0.09309791332263243,
+              "1": 0.08265802269043761,
+              "2": 0.08035714285714286
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.15835777126099707,
+            "range_recall": 0.2151394422310757,
+            "range_f1": 0.18243243243243243,
+            "coverage": 0.8498953974895398,
+            "abs_coverage_gap": 0.04989539748953975,
+            "empirical_fpr_at_alpha": 0.15010460251046026,
+            "inflation": 1.0,
+            "alarm_rate": 0.15765141007859454,
+            "q_source": 0.0187320988625288,
+            "d_mean": 0.6916345886909382
+          },
+          "aci_a0.2": {
+            "range_precision": 0.13258426966292136,
+            "range_recall": 0.2350597609561753,
+            "range_f1": 0.1695402298850575,
+            "coverage": 0.7981171548117154,
+            "abs_coverage_gap": 0.001882845188284632,
+            "empirical_fpr_at_alpha": 0.20188284518828453,
+            "inflation": 0.8882500188132587,
+            "alarm_rate": 0.20573277854831254,
+            "q_source": 0.0187320988625288,
+            "d_mean": 0.6916345886909382
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.12387387387387387,
+            "range_recall": 0.21912350597609562,
+            "range_f1": 0.15827338129496404,
+            "coverage": 0.7965481171548117,
+            "abs_coverage_gap": 0.003451882845188381,
+            "empirical_fpr_at_alpha": 0.20345188284518828,
+            "inflation": 0.9360679779940067,
+            "alarm_rate": 0.20527045769764216,
+            "q_source": 0.0187320988625288,
+            "d_mean": 0.6916345886909382
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.13004484304932734,
+            "range_recall": 0.23107569721115537,
+            "range_f1": 0.16642754662840747,
+            "coverage": 0.7970711297071129,
+            "abs_coverage_gap": 0.0029288702928871313,
+            "empirical_fpr_at_alpha": 0.20292887029288703,
+            "inflation": 0.8666590703358121,
+            "alarm_rate": 0.2061950993989829,
+            "q_source": 0.0187320988625288,
+            "d_mean": 0.6916345886909382,
+            "mondrian_per_bin_fpr": {
+              "0": 0.20706260032102727,
+              "1": 0.1993517017828201,
+              "2": 0.20238095238095238
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.16257309941520467,
+            "range_recall": 0.5537848605577689,
+            "range_f1": 0.2513562386980108,
+            "coverage": 0.6255230125523012,
+            "abs_coverage_gap": 0.0744769874476987,
+            "empirical_fpr_at_alpha": 0.37447698744769875,
+            "inflation": 1.0,
+            "alarm_rate": 0.39528432732316227,
+            "q_source": 0.013659369200468063,
+            "d_mean": 0.6916345886909382
+          },
+          "aci_a0.3": {
+            "range_precision": 0.12874251497005987,
+            "range_recall": 0.3426294820717131,
+            "range_f1": 0.1871599564744287,
+            "coverage": 0.6956066945606695,
+            "abs_coverage_gap": 0.004393305439330475,
+            "empirical_fpr_at_alpha": 0.3043933054393305,
+            "inflation": 1.0126037026975978,
+            "alarm_rate": 0.308830328247804,
+            "q_source": 0.013659369200468063,
+            "d_mean": 0.6916345886909382
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.13193403298350825,
+            "range_recall": 0.350597609561753,
+            "range_f1": 0.1917211328976035,
+            "coverage": 0.6971757322175732,
+            "abs_coverage_gap": 0.002824267782426726,
+            "empirical_fpr_at_alpha": 0.30282426778242677,
+            "inflation": 1.0674199332530512,
+            "alarm_rate": 0.3083680073971336,
+            "q_source": 0.013659369200468063,
+            "d_mean": 0.6916345886909382
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.13925925925925925,
+            "range_recall": 0.3745019920318725,
+            "range_f1": 0.20302375809935203,
+            "coverage": 0.6961297071129707,
+            "abs_coverage_gap": 0.0038702928870292252,
+            "empirical_fpr_at_alpha": 0.30387029288702927,
+            "inflation": 0.9732255034034001,
+            "alarm_rate": 0.3120665742024965,
+            "q_source": 0.013659369200468063,
+            "d_mean": 0.6916345886909382,
+            "mondrian_per_bin_fpr": {
+              "0": 0.3097913322632424,
+              "1": 0.30307941653160453,
+              "2": 0.29910714285714285
+            }
+          }
+        },
+        "elapsed_sec": 70.01916360855103
+      }
+    },
+    "F2": {
+      "target": "care",
+      "sources": [
+        "phm16",
+        "pv",
+        "cwru",
+        "paderborn",
+        "mfpt",
+        "xjtu"
+      ],
+      "run": {
+        "auroc": 0.3894895757242456,
+        "auprc": 0.09945019481779466,
+        "train": {
+          "loss_last_mean": 0.005540177854709327,
+          "nan": false,
+          "elapsed_sec": 68.386403799057
+        },
+        "n_eval": 5271,
+        "n_eval_normal": 4714,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 0.13815789473684212,
+            "range_recall": 0.03770197486535009,
+            "range_f1": 0.059238363892806775,
+            "coverage": 0.9722104369961816,
+            "abs_coverage_gap": 0.022210436996181637,
+            "empirical_fpr_at_alpha": 0.027789563003818414,
+            "inflation": 1.0,
+            "alarm_rate": 0.028837032821096568,
+            "q_source": 0.6885483264923096,
+            "d_mean": 0.08627161992601783
+          },
+          "aci_a0.05": {
+            "range_precision": 0.0996309963099631,
+            "range_recall": 0.04847396768402154,
+            "range_f1": 0.06521739130434781,
+            "coverage": 0.9482392872295291,
+            "abs_coverage_gap": 0.0017607127704708514,
+            "empirical_fpr_at_alpha": 0.05176071277047094,
+            "inflation": 0.6432320107668331,
+            "alarm_rate": 0.051413394042876114,
+            "q_source": 0.6885483264923096,
+            "d_mean": 0.08627161992601783
+          },
+          "shiftband_a0.05": {
+            "range_precision": 0.0962962962962963,
+            "range_recall": 0.0466786355475763,
+            "range_f1": 0.06287787182587666,
+            "coverage": 0.9482392872295291,
+            "abs_coverage_gap": 0.0017607127704708514,
+            "empirical_fpr_at_alpha": 0.05176071277047094,
+            "inflation": 0.687656569004978,
+            "alarm_rate": 0.05122367672168469,
+            "q_source": 0.6885483264923096,
+            "d_mean": 0.08627161992601783
+          },
+          "mondrian_a0.05": {
+            "range_precision": 0.10810810810810811,
+            "range_recall": 0.05026929982046679,
+            "range_f1": 0.06862745098039216,
+            "coverage": 0.9509970301230377,
+            "abs_coverage_gap": 0.0009970301230377565,
+            "empirical_fpr_at_alpha": 0.04900296987696224,
+            "inflation": 0.6516314571905601,
+            "alarm_rate": 0.049136786188579015,
+            "q_source": 0.6885483264923096,
+            "d_mean": 0.08627161992601783,
+            "mondrian_per_bin_fpr": {
+              "0": 0.058240396530359353,
+              "1": 0.04664179104477612,
+              "2": 0.04155495978552279
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.08032319391634982,
+            "range_recall": 0.6068222621184919,
+            "range_f1": 0.14186778593913957,
+            "coverage": 0.17904115400933385,
+            "abs_coverage_gap": 0.7209588459906662,
+            "empirical_fpr_at_alpha": 0.8209588459906662,
+            "inflation": 1.0,
+            "alarm_rate": 0.7983304875735154,
+            "q_source": 0.024199053645133972,
+            "d_mean": 0.08627161992601783
+          },
+          "aci_a0.1": {
+            "range_precision": 0.12626262626262627,
+            "range_recall": 0.13464991023339318,
+            "range_f1": 0.13032145960034755,
+            "coverage": 0.8899024183283836,
+            "abs_coverage_gap": 0.010097581671616451,
+            "empirical_fpr_at_alpha": 0.11009758167161646,
+            "inflation": 10.622972212619889,
+            "alarm_rate": 0.11269208878770631,
+            "q_source": 0.024199053645133972,
+            "d_mean": 0.08627161992601783
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.12773109243697478,
+            "range_recall": 0.13644524236983843,
+            "range_f1": 0.13194444444444445,
+            "coverage": 0.8899024183283836,
+            "abs_coverage_gap": 0.010097581671616451,
+            "empirical_fpr_at_alpha": 0.11009758167161646,
+            "inflation": 10.98734468745003,
+            "alarm_rate": 0.11288180610889774,
+            "q_source": 0.024199053645133972,
+            "d_mean": 0.08627161992601783
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.12857142857142856,
+            "range_recall": 0.1615798922800718,
+            "range_f1": 0.1431980906921241,
+            "coverage": 0.8705982180738226,
+            "abs_coverage_gap": 0.029401781926177373,
+            "empirical_fpr_at_alpha": 0.12940178192617735,
+            "inflation": 9.588326199039152,
+            "alarm_rate": 0.13280212483399734,
+            "q_source": 0.024199053645133972,
+            "d_mean": 0.08627161992601783,
+            "mondrian_per_bin_fpr": {
+              "0": 0.1412639405204461,
+              "1": 0.11940298507462686,
+              "2": 0.12734584450402145
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.08664412510566356,
+            "range_recall": 0.7360861759425493,
+            "range_f1": 0.15503875968992248,
+            "coverage": 0.08315655494272378,
+            "abs_coverage_gap": 0.7168434450572763,
+            "empirical_fpr_at_alpha": 0.9168434450572762,
+            "inflation": 1.0,
+            "alarm_rate": 0.897742363877822,
+            "q_source": 0.014405881986021996,
+            "d_mean": 0.08627161992601783
+          },
+          "aci_a0.2": {
+            "range_precision": 0.10873440285204991,
+            "range_recall": 0.21903052064631956,
+            "range_f1": 0.1453245979749851,
+            "coverage": 0.7878659312685617,
+            "abs_coverage_gap": 0.012134068731438297,
+            "empirical_fpr_at_alpha": 0.21213406873143828,
+            "inflation": 9.85487451632349,
+            "alarm_rate": 0.2128628343767786,
+            "q_source": 0.014405881986021996,
+            "d_mean": 0.08627161992601783
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.10704727921498662,
+            "range_recall": 0.21543985637342908,
+            "range_f1": 0.1430274135876043,
+            "coverage": 0.7876537971998303,
+            "abs_coverage_gap": 0.012346202800169737,
+            "empirical_fpr_at_alpha": 0.21234620280016972,
+            "inflation": 10.139509731557736,
+            "alarm_rate": 0.21267311705558717,
+            "q_source": 0.014405881986021996,
+            "d_mean": 0.08627161992601783
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.11382113821138211,
+            "range_recall": 0.2513464991023339,
+            "range_f1": 0.1566871852266368,
+            "coverage": 0.7687738650827323,
+            "abs_coverage_gap": 0.031226134917267778,
+            "empirical_fpr_at_alpha": 0.2312261349172677,
+            "inflation": 10.000790098061056,
+            "alarm_rate": 0.2333523050654525,
+            "q_source": 0.014405881986021996,
+            "d_mean": 0.08627161992601783,
+            "mondrian_per_bin_fpr": {
+              "0": 0.24225526641883519,
+              "1": 0.22077114427860697,
+              "2": 0.23056300268096513
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.08902564102564102,
+            "range_recall": 0.7791741472172352,
+            "range_f1": 0.15979381443298968,
+            "coverage": 0.05791260076368265,
+            "abs_coverage_gap": 0.6420873992363173,
+            "empirical_fpr_at_alpha": 0.9420873992363173,
+            "inflation": 1.0,
+            "alarm_rate": 0.9248719408081958,
+            "q_source": 0.010822374373674393,
+            "d_mean": 0.08627161992601783
+          },
+          "aci_a0.3": {
+            "range_precision": 0.09782608695652174,
+            "range_recall": 0.29084380610412924,
+            "range_f1": 0.1464075915047447,
+            "coverage": 0.6830717013152312,
+            "abs_coverage_gap": 0.01692829868476875,
+            "empirical_fpr_at_alpha": 0.3169282986847688,
+            "inflation": 8.982273614546445,
+            "alarm_rate": 0.31417188389299944,
+            "q_source": 0.010822374373674393,
+            "d_mean": 0.08627161992601783
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.09903381642512077,
+            "range_recall": 0.29443447037701975,
+            "range_f1": 0.1482150926344329,
+            "coverage": 0.6834959694526941,
+            "abs_coverage_gap": 0.01650403054730587,
+            "empirical_fpr_at_alpha": 0.3165040305473059,
+            "inflation": 9.138693032658699,
+            "alarm_rate": 0.31417188389299944,
+            "q_source": 0.010822374373674393,
+            "d_mean": 0.08627161992601783
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.10285714285714286,
+            "range_recall": 0.3231597845601436,
+            "range_f1": 0.15604681404421325,
+            "coverage": 0.666949512091642,
+            "abs_coverage_gap": 0.03305048790835796,
+            "empirical_fpr_at_alpha": 0.33305048790835806,
+            "inflation": 9.14569846150466,
+            "alarm_rate": 0.33200531208499334,
+            "q_source": 0.010822374373674393,
+            "d_mean": 0.08627161992601783,
+            "mondrian_per_bin_fpr": {
+              "0": 0.34014869888475835,
+              "1": 0.3246268656716418,
+              "2": 0.3344504021447721
+            }
+          }
+        },
+        "elapsed_sec": 68.69293713569641
+      }
+    },
+    "F3": {
+      "target": "pv",
+      "sources": [
+        "phm16",
+        "care",
+        "cwru",
+        "paderborn",
+        "mfpt",
+        "xjtu"
+      ],
+      "run": {
+        "auroc": 0.8037274252227522,
+        "auprc": 0.7449767749993313,
+        "train": {
+          "loss_last_mean": 0.0144832517625764,
+          "nan": false,
+          "elapsed_sec": 68.20260238647461
+        },
+        "n_eval": 1072,
+        "n_eval_normal": 858,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.32242990654205606,
+            "range_f1": 0.4876325088339222,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.0,
+            "alarm_rate": 0.06436567164179105,
+            "q_source": 0.4011218249797821,
+            "d_mean": 0.06021900140210117
+          },
+          "aci_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.32242990654205606,
+            "range_f1": 0.4876325088339222,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.6169490394449595,
+            "alarm_rate": 0.06436567164179105,
+            "q_source": 0.4011218249797821,
+            "d_mean": 0.06021900140210117
+          },
+          "shiftband_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.3177570093457944,
+            "range_f1": 0.48226950354609927,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.616832171946405,
+            "alarm_rate": 0.06343283582089553,
+            "q_source": 0.4011218249797821,
+            "d_mean": 0.06021900140210117
+          },
+          "mondrian_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.2570093457943925,
+            "range_f1": 0.40892193308550184,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.6937500693157905,
+            "alarm_rate": 0.051305970149253734,
+            "q_source": 0.4011218249797821,
+            "d_mean": 0.06021900140210117,
+            "mondrian_per_bin_fpr": {
+              "0": 0.0,
+              "1": 0.0,
+              "2": 0.0
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.9859154929577465,
+            "range_recall": 0.32710280373831774,
+            "range_f1": 0.49122807017543857,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.0988344988344988,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 1.0,
+            "alarm_rate": 0.06623134328358209,
+            "q_source": 0.04023827612400055,
+            "d_mean": 0.06021900140210117
+          },
+          "aci_a0.1": {
+            "range_precision": 0.9880952380952381,
+            "range_recall": 0.3878504672897196,
+            "range_f1": 0.5570469798657718,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.0988344988344988,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 0.5605623850643038,
+            "alarm_rate": 0.07835820895522388,
+            "q_source": 0.04023827612400055,
+            "d_mean": 0.06021900140210117
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.9879518072289156,
+            "range_recall": 0.38317757009345793,
+            "range_f1": 0.5521885521885522,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.0988344988344988,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 0.5622656527617003,
+            "alarm_rate": 0.07742537313432836,
+            "q_source": 0.04023827612400055,
+            "d_mean": 0.06021900140210117
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.9871794871794872,
+            "range_recall": 0.3598130841121495,
+            "range_f1": 0.5273972602739725,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.0988344988344988,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 1.4035838983297535,
+            "alarm_rate": 0.07276119402985075,
+            "q_source": 0.04023827612400055,
+            "d_mean": 0.06021900140210117,
+            "mondrian_per_bin_fpr": {
+              "0": 0.0,
+              "1": 0.0,
+              "2": 0.0041841004184100415
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.9879518072289156,
+            "range_recall": 0.38317757009345793,
+            "range_f1": 0.5521885521885522,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.19883449883449877,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 1.0,
+            "alarm_rate": 0.07742537313432836,
+            "q_source": 0.01803307607769966,
+            "d_mean": 0.06021900140210117
+          },
+          "aci_a0.2": {
+            "range_precision": 0.7303370786516854,
+            "range_recall": 0.6074766355140186,
+            "range_f1": 0.663265306122449,
+            "coverage": 0.9440559440559441,
+            "abs_coverage_gap": 0.14405594405594402,
+            "empirical_fpr_at_alpha": 0.055944055944055944,
+            "inflation": 0.2822367005506996,
+            "alarm_rate": 0.166044776119403,
+            "q_source": 0.01803307607769966,
+            "d_mean": 0.06021900140210117
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.7471910112359551,
+            "range_recall": 0.6214953271028038,
+            "range_f1": 0.6785714285714286,
+            "coverage": 0.9475524475524475,
+            "abs_coverage_gap": 0.14755244755244745,
+            "empirical_fpr_at_alpha": 0.05244755244755245,
+            "inflation": 0.2931194946323307,
+            "alarm_rate": 0.166044776119403,
+            "q_source": 0.01803307607769966,
+            "d_mean": 0.06021900140210117
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.7727272727272727,
+            "range_recall": 0.4766355140186916,
+            "range_f1": 0.5895953757225434,
+            "coverage": 0.965034965034965,
+            "abs_coverage_gap": 0.16503496503496495,
+            "empirical_fpr_at_alpha": 0.03496503496503497,
+            "inflation": 0.6572687670130026,
+            "alarm_rate": 0.12313432835820895,
+            "q_source": 0.01803307607769966,
+            "d_mean": 0.06021900140210117,
+            "mondrian_per_bin_fpr": {
+              "0": 0.0273972602739726,
+              "1": 0.06422018348623854,
+              "2": 0.0041841004184100415
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.9897959183673469,
+            "range_recall": 0.4532710280373832,
+            "range_f1": 0.6217948717948718,
+            "coverage": 0.9988344988344988,
+            "abs_coverage_gap": 0.29883449883449886,
+            "empirical_fpr_at_alpha": 0.0011655011655011655,
+            "inflation": 1.0,
+            "alarm_rate": 0.0914179104477612,
+            "q_source": 0.013238967396318913,
+            "d_mean": 0.06021900140210117
+          },
+          "aci_a0.3": {
+            "range_precision": 0.5123674911660777,
+            "range_recall": 0.677570093457944,
+            "range_f1": 0.5835010060362172,
+            "coverage": 0.8391608391608392,
+            "abs_coverage_gap": 0.1391608391608392,
+            "empirical_fpr_at_alpha": 0.16083916083916083,
+            "inflation": 0.1981058698744105,
+            "alarm_rate": 0.26399253731343286,
+            "q_source": 0.013238967396318913,
+            "d_mean": 0.06021900140210117
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.5123674911660777,
+            "range_recall": 0.677570093457944,
+            "range_f1": 0.5835010060362172,
+            "coverage": 0.8391608391608392,
+            "abs_coverage_gap": 0.1391608391608392,
+            "empirical_fpr_at_alpha": 0.16083916083916083,
+            "inflation": 0.19844843464879236,
+            "alarm_rate": 0.26399253731343286,
+            "q_source": 0.013238967396318913,
+            "d_mean": 0.06021900140210117
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.586046511627907,
+            "range_recall": 0.5887850467289719,
+            "range_f1": 0.5874125874125874,
+            "coverage": 0.8962703962703963,
+            "abs_coverage_gap": 0.19627039627039633,
+            "empirical_fpr_at_alpha": 0.10372960372960373,
+            "inflation": 0.42630744897107425,
+            "alarm_rate": 0.20055970149253732,
+            "q_source": 0.013238967396318913,
+            "d_mean": 0.06021900140210117,
+            "mondrian_per_bin_fpr": {
+              "0": 0.11301369863013698,
+              "1": 0.1651376146788991,
+              "2": 0.008368200836820083
+            }
+          }
+        },
+        "elapsed_sec": 68.42293500900269
+      }
+    },
+    "F4": {
+      "target": "cwru+paderborn",
+      "sources": [
+        "phm16",
+        "care",
+        "pv",
+        "mfpt",
+        "xjtu"
+      ],
+      "run": {
+        "auroc": 0.9909517617575052,
+        "auprc": 0.9916556218671095,
+        "train": {
+          "loss_last_mean": 0.01807819209061563,
+          "nan": false,
+          "elapsed_sec": 68.26172113418579
+        },
+        "n_eval": 18536,
+        "n_eval_normal": 10980,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 0.9989293361884368,
+            "range_recall": 0.12347803070407623,
+            "range_f1": 0.21978798586572437,
+            "coverage": 0.9999089253187614,
+            "abs_coverage_gap": 0.049908925318761455,
+            "empirical_fpr_at_alpha": 9.107468123861566e-05,
+            "inflation": 1.0,
+            "alarm_rate": 0.050388433318946914,
+            "q_source": 0.7325426340103149,
+            "d_mean": 0.6248899291432997
+          },
+          "aci_a0.05": {
+            "range_precision": 0.5398037077426391,
+            "range_recall": 0.06551085230280572,
+            "range_f1": 0.11684173256225658,
+            "coverage": 0.9615664845173042,
+            "abs_coverage_gap": 0.011566484517304243,
+            "empirical_fpr_at_alpha": 0.03843351548269581,
+            "inflation": 0.4122000892131095,
+            "alarm_rate": 0.04947129909365559,
+            "q_source": 0.7325426340103149,
+            "d_mean": 0.6248899291432997
+          },
+          "shiftband_a0.05": {
+            "range_precision": 0.5339805825242718,
+            "range_recall": 0.06551085230280572,
+            "range_f1": 0.1167039962277496,
+            "coverage": 0.9606557377049181,
+            "abs_coverage_gap": 0.010655737704918122,
+            "empirical_fpr_at_alpha": 0.03934426229508197,
+            "inflation": 0.3846943218758141,
+            "alarm_rate": 0.050010789814415195,
+            "q_source": 0.7325426340103149,
+            "d_mean": 0.6248899291432997
+          },
+          "mondrian_a0.05": {
+            "range_precision": 0.7383720930232558,
+            "range_recall": 0.08403917416622551,
+            "range_f1": 0.15090304182509504,
+            "coverage": 0.9795081967213115,
+            "abs_coverage_gap": 0.029508196721311553,
+            "empirical_fpr_at_alpha": 0.020491803278688523,
+            "inflation": 0.4501311425735422,
+            "alarm_rate": 0.046396201985325854,
+            "q_source": 0.7325426340103149,
+            "d_mean": 0.6248899291432997,
+            "mondrian_per_bin_fpr": {
+              "0": 0.009538002980625931,
+              "1": 0.03125,
+              "2": 0.013623978201634877
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.9978213507625272,
+            "range_recall": 0.6667548967707781,
+            "range_f1": 0.7993653312177708,
+            "coverage": 0.9989981785063752,
+            "abs_coverage_gap": 0.09899817850637516,
+            "empirical_fpr_at_alpha": 0.0010018214936247723,
+            "inflation": 1.0,
+            "alarm_rate": 0.27238886491152353,
+            "q_source": 0.07561647146940231,
+            "d_mean": 0.6248899291432997
+          },
+          "aci_a0.1": {
+            "range_precision": 0.47214854111405835,
+            "range_recall": 0.117787188988883,
+            "range_f1": 0.18853934964516472,
+            "coverage": 0.9093806921675774,
+            "abs_coverage_gap": 0.00938069216757742,
+            "empirical_fpr_at_alpha": 0.09061930783242259,
+            "inflation": 2.9999122423538593,
+            "alarm_rate": 0.10169400086318515,
+            "q_source": 0.07561647146940231,
+            "d_mean": 0.6248899291432997
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.4670879410215903,
+            "range_recall": 0.11739015352038115,
+            "range_f1": 0.187625594923321,
+            "coverage": 0.907832422586521,
+            "abs_coverage_gap": 0.007832422586520948,
+            "empirical_fpr_at_alpha": 0.09216757741347906,
+            "inflation": 2.8874687911846353,
+            "alarm_rate": 0.10244928787224859,
+            "q_source": 0.07561647146940231,
+            "d_mean": 0.6248899291432997
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.5317796610169492,
+            "range_recall": 0.1328745367919534,
+            "range_f1": 0.21262177043625585,
+            "coverage": 0.9194899817850637,
+            "abs_coverage_gap": 0.01948998178506367,
+            "empirical_fpr_at_alpha": 0.08051001821493625,
+            "inflation": 2.9684271059669083,
+            "alarm_rate": 0.10185584807941303,
+            "q_source": 0.07561647146940231,
+            "d_mean": 0.6248899291432997,
+            "mondrian_per_bin_fpr": {
+              "0": 0.06408345752608048,
+              "1": 0.09117879746835443,
+              "2": 0.08096535616971584
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.9937879225657325,
+            "range_recall": 0.9104023292747485,
+            "range_f1": 0.9502693742229589,
+            "coverage": 0.9960837887067395,
+            "abs_coverage_gap": 0.19608378870673948,
+            "empirical_fpr_at_alpha": 0.003916211293260473,
+            "inflation": 1.0,
+            "alarm_rate": 0.37343547690979717,
+            "q_source": 0.023547112941741943,
+            "d_mean": 0.6248899291432997
+          },
+          "aci_a0.2": {
+            "range_precision": 0.4395546129374337,
+            "range_recall": 0.21942826892535733,
+            "range_f1": 0.292725988700565,
+            "coverage": 0.8074681238615665,
+            "abs_coverage_gap": 0.007468123861566478,
+            "empirical_fpr_at_alpha": 0.1925318761384335,
+            "inflation": 7.916081903713975,
+            "alarm_rate": 0.20349589987052222,
+            "q_source": 0.023547112941741943,
+            "d_mean": 0.6248899291432997
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.43774781919111816,
+            "range_recall": 0.21916357861302277,
+            "range_f1": 0.2920892494929006,
+            "coverage": 0.8062841530054645,
+            "abs_coverage_gap": 0.006284153005464477,
+            "empirical_fpr_at_alpha": 0.1937158469945355,
+            "inflation": 7.72215825541362,
+            "alarm_rate": 0.2040893396633578,
+            "q_source": 0.023547112941741943,
+            "d_mean": 0.6248899291432997
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.4619450317124736,
+            "range_recall": 0.23133933298041293,
+            "range_f1": 0.3082892416225749,
+            "coverage": 0.8145719489981785,
+            "abs_coverage_gap": 0.014571948998178486,
+            "empirical_fpr_at_alpha": 0.1854280510018215,
+            "inflation": 7.905850087368489,
+            "alarm_rate": 0.20414328873543375,
+            "q_source": 0.023547112941741943,
+            "d_mean": 0.6248899291432997,
+            "mondrian_per_bin_fpr": {
+              "0": 0.1648286140089419,
+              "1": 0.19699367088607594,
+              "2": 0.18956792526274815
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.9917115623704932,
+            "range_recall": 0.9501058761249338,
+            "range_f1": 0.9704629942548157,
+            "coverage": 0.994535519125683,
+            "abs_coverage_gap": 0.2945355191256831,
+            "empirical_fpr_at_alpha": 0.00546448087431694,
+            "inflation": 1.0,
+            "alarm_rate": 0.39053733275787655,
+            "q_source": 0.016934506595134735,
+            "d_mean": 0.6248899291432997
+          },
+          "aci_a0.3": {
+            "range_precision": 0.4321928736039709,
+            "range_recall": 0.32265749073583905,
+            "range_f1": 0.36947791164658633,
+            "coverage": 0.7082877959927141,
+            "abs_coverage_gap": 0.00828779599271412,
+            "empirical_fpr_at_alpha": 0.291712204007286,
+            "inflation": 9.5573909562136,
+            "alarm_rate": 0.304326715580492,
+            "q_source": 0.016934506595134735,
+            "d_mean": 0.6248899291432997
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.43021404563948346,
+            "range_recall": 0.32186341979883537,
+            "range_f1": 0.36823377999848583,
+            "coverage": 0.706648451730419,
+            "abs_coverage_gap": 0.006648451730419058,
+            "empirical_fpr_at_alpha": 0.29335154826958104,
+            "inflation": 9.443060473403502,
+            "alarm_rate": 0.3049741044454035,
+            "q_source": 0.016934506595134735,
+            "d_mean": 0.6248899291432997
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.4464506992388033,
+            "range_recall": 0.33377448385389097,
+            "range_f1": 0.3819765240439228,
+            "coverage": 0.7152094717668488,
+            "abs_coverage_gap": 0.015209471766848837,
+            "empirical_fpr_at_alpha": 0.2847905282331512,
+            "inflation": 9.497168851922572,
+            "alarm_rate": 0.3047583081570997,
+            "q_source": 0.016934506595134735,
+            "d_mean": 0.6248899291432997,
+            "mondrian_per_bin_fpr": {
+              "0": 0.2581222056631893,
+              "1": 0.2986550632911392,
+              "2": 0.2923316465550798
+            }
+          }
+        },
+        "elapsed_sec": 68.98251724243164
+      }
+    },
+    "F5": {
+      "target": "mfpt",
+      "sources": [
+        "phm16",
+        "care",
+        "pv",
+        "cwru",
+        "paderborn",
+        "xjtu"
+      ],
+      "run": {
+        "auroc": 0.3485442235570323,
+        "auprc": 0.7112603472436124,
+        "train": {
+          "loss_last_mean": 0.014718803479336202,
+          "nan": false,
+          "elapsed_sec": 70.02036213874817
+        },
+        "n_eval": 18733,
+        "n_eval_normal": 5072,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.0191786838445209,
+            "range_f1": 0.03763556704733175,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.0,
+            "alarm_rate": 0.013986013986013986,
+            "q_source": 0.5440583825111389,
+            "d_mean": -0.4778590371584037
+          },
+          "aci_a0.05": {
+            "range_precision": 0.7827442827442828,
+            "range_recall": 0.05512041578215358,
+            "range_f1": 0.10298844286398141,
+            "coverage": 0.9587933753943217,
+            "abs_coverage_gap": 0.00879337539432179,
+            "empirical_fpr_at_alpha": 0.041206624605678234,
+            "inflation": 0.3036231723202092,
+            "alarm_rate": 0.05135322692574601,
+            "q_source": 0.5440583825111389,
+            "d_mean": -0.4778590371584037
+          },
+          "shiftband_a0.05": {
+            "range_precision": 0.782563025210084,
+            "range_recall": 0.05453480711514531,
+            "range_f1": 0.10196400465339081,
+            "coverage": 0.9591876971608833,
+            "abs_coverage_gap": 0.009187697160883301,
+            "empirical_fpr_at_alpha": 0.04081230283911672,
+            "inflation": 0.21478591617829443,
+            "alarm_rate": 0.050819409598035555,
+            "q_source": 0.5440583825111389,
+            "d_mean": -0.4778590371584037
+          },
+          "mondrian_a0.05": {
+            "range_precision": 0.83115338882283,
+            "range_recall": 0.051167557279847745,
+            "range_f1": 0.09640049648324368,
+            "coverage": 0.9720031545741324,
+            "abs_coverage_gap": 0.02200315457413249,
+            "empirical_fpr_at_alpha": 0.027996845425867507,
+            "inflation": 0.28512311046265726,
+            "alarm_rate": 0.04489403726044947,
+            "q_source": 0.5440583825111389,
+            "d_mean": -0.4778590371584037,
+            "mondrian_per_bin_fpr": {
+              "0": 0.0,
+              "1": 0.02312992125984252,
+              "2": 0.033711852377572744
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.9569230769230769,
+            "range_recall": 0.09106214771978625,
+            "range_f1": 0.16629904418153868,
+            "coverage": 0.9889589905362776,
+            "abs_coverage_gap": 0.08895899053627754,
+            "empirical_fpr_at_alpha": 0.011041009463722398,
+            "inflation": 1.0,
+            "alarm_rate": 0.06939625260235947,
+            "q_source": 0.051265936344861984,
+            "d_mean": -0.4778590371584037
+          },
+          "aci_a0.1": {
+            "range_precision": 0.738265306122449,
+            "range_recall": 0.10592196764512114,
+            "range_f1": 0.18526342743742397,
+            "coverage": 0.8988564668769716,
+            "abs_coverage_gap": 0.0011435331230283952,
+            "empirical_fpr_at_alpha": 0.10114353312302839,
+            "inflation": 1.831715560818367,
+            "alarm_rate": 0.10462819623124966,
+            "q_source": 0.051265936344861984,
+            "d_mean": -0.4778590371584037
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.737948717948718,
+            "range_recall": 0.10533635897811287,
+            "range_f1": 0.18435718403689708,
+            "coverage": 0.8992507886435331,
+            "abs_coverage_gap": 0.0007492113564668834,
+            "empirical_fpr_at_alpha": 0.10074921135646688,
+            "inflation": 1.366433000188374,
+            "alarm_rate": 0.1040943789035392,
+            "q_source": 0.051265936344861984,
+            "d_mean": -0.4778590371584037
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.7441497659906396,
+            "range_recall": 0.1047507503111046,
+            "range_f1": 0.1836498973305955,
+            "coverage": 0.9029968454258676,
+            "abs_coverage_gap": 0.0029968454258675337,
+            "empirical_fpr_at_alpha": 0.09700315457413249,
+            "inflation": 1.780575068849836,
+            "alarm_rate": 0.10265307211872098,
+            "q_source": 0.051265936344861984,
+            "d_mean": -0.4778590371584037,
+            "mondrian_per_bin_fpr": {
+              "0": 0.04504504504504504,
+              "1": 0.09694881889763779,
+              "2": 0.10113555713271824
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.6221632503660323,
+            "range_recall": 0.49769416587365495,
+            "range_f1": 0.5530115092114359,
+            "coverage": 0.18592271293375395,
+            "abs_coverage_gap": 0.6140772870662461,
+            "empirical_fpr_at_alpha": 0.814077287066246,
+            "inflation": 1.0,
+            "alarm_rate": 0.5833555757219879,
+            "q_source": 0.019754497334361076,
+            "d_mean": -0.4778590371584037
+          },
+          "aci_a0.2": {
+            "range_precision": 0.7281957823483468,
+            "range_recall": 0.204743430202767,
+            "range_f1": 0.31962061478688153,
+            "coverage": 0.7941640378548895,
+            "abs_coverage_gap": 0.005835962145110507,
+            "empirical_fpr_at_alpha": 0.2058359621451104,
+            "inflation": 1.8779680649983717,
+            "alarm_rate": 0.20503923557358672,
+            "q_source": 0.019754497334361076,
+            "d_mean": -0.4778590371584037
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.7286458333333333,
+            "range_recall": 0.20481663128614302,
+            "range_f1": 0.31975315696245926,
+            "coverage": 0.7945583596214512,
+            "abs_coverage_gap": 0.005441640378548884,
+            "empirical_fpr_at_alpha": 0.2054416403785489,
+            "inflation": 1.7322697806710896,
+            "alarm_rate": 0.20498585384081566,
+            "q_source": 0.019754497334361076,
+            "d_mean": -0.4778590371584037
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.7270612561385371,
+            "range_recall": 0.20591464753678354,
+            "range_f1": 0.3209355390758699,
+            "coverage": 0.7917981072555205,
+            "abs_coverage_gap": 0.008201892744479578,
+            "empirical_fpr_at_alpha": 0.2082018927444795,
+            "inflation": 2.9731255298054573,
+            "alarm_rate": 0.206533924091176,
+            "q_source": 0.019754497334361076,
+            "d_mean": -0.4778590371584037,
+            "mondrian_per_bin_fpr": {
+              "0": 0.22522522522522523,
+              "1": 0.20669291338582677,
+              "2": 0.20794889992902768
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.6756306825457805,
+            "range_recall": 0.7724178317839104,
+            "range_f1": 0.7207896444550703,
+            "coverage": 0.0011829652996845352,
+            "abs_coverage_gap": 0.6988170347003154,
+            "empirical_fpr_at_alpha": 0.9988170347003155,
+            "inflation": 1.0,
+            "alarm_rate": 0.8337159024181925,
+            "q_source": 0.011470504105091095,
+            "d_mean": -0.4778590371584037
+          },
+          "aci_a0.3": {
+            "range_precision": 0.72643156424581,
+            "range_recall": 0.3045897079276773,
+            "range_f1": 0.42921244004332354,
+            "coverage": 0.6910488958990536,
+            "abs_coverage_gap": 0.00895110410094635,
+            "empirical_fpr_at_alpha": 0.3089511041009464,
+            "inflation": 2.2876384054935466,
+            "alarm_rate": 0.30577056531255004,
+            "q_source": 0.011470504105091095,
+            "d_mean": -0.4778590371584037
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.7266061452513967,
+            "range_recall": 0.30466290901105336,
+            "range_f1": 0.4293155913146629,
+            "coverage": 0.6912460567823344,
+            "abs_coverage_gap": 0.008753943217665539,
+            "empirical_fpr_at_alpha": 0.30875394321766564,
+            "inflation": 2.2421414327861404,
+            "alarm_rate": 0.30577056531255004,
+            "q_source": 0.011470504105091095,
+            "d_mean": -0.4778590371584037
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.7234999135396852,
+            "range_recall": 0.3062733328453261,
+            "range_f1": 0.43036412260851675,
+            "coverage": 0.6847397476340694,
+            "abs_coverage_gap": 0.015260252365930538,
+            "empirical_fpr_at_alpha": 0.3152602523659306,
+            "inflation": 3.606132047642652,
+            "alarm_rate": 0.30870656061495755,
+            "q_source": 0.011470504105091095,
+            "d_mean": -0.4778590371584037,
+            "mondrian_per_bin_fpr": {
+              "0": 0.36936936936936937,
+              "1": 0.31299212598425197,
+              "2": 0.3126330731014904
+            }
+          }
+        },
+        "elapsed_sec": 70.78028082847595
+      }
+    },
+    "F6": {
+      "target": "xjtu",
+      "sources": [
+        "phm16",
+        "care",
+        "pv",
+        "cwru",
+        "paderborn",
+        "mfpt"
+      ],
+      "run": {
+        "auroc": 0.7796473068069026,
+        "auprc": 0.679698921284825,
+        "train": {
+          "loss_last_mean": 0.015673192092217503,
+          "nan": false,
+          "elapsed_sec": 68.14882183074951
+        },
+        "n_eval": 16799,
+        "n_eval_normal": 12806,
+        "evals": {
+          "static_a0.05": {
+            "range_precision": 1.0,
+            "range_recall": 0.2747307788630103,
+            "range_f1": 0.4310412573673871,
+            "coverage": 1.0,
+            "abs_coverage_gap": 0.050000000000000044,
+            "empirical_fpr_at_alpha": 0.0,
+            "inflation": 1.0,
+            "alarm_rate": 0.06530150604202631,
+            "q_source": 0.03954550623893738,
+            "d_mean": 0.4125211969663765
+          },
+          "aci_a0.05": {
+            "range_precision": 0.5146022155085599,
+            "range_recall": 0.1279739544202354,
+            "range_f1": 0.2049739269955876,
+            "coverage": 0.9623613930969858,
+            "abs_coverage_gap": 0.012361393096985807,
+            "empirical_fpr_at_alpha": 0.03763860690301421,
+            "inflation": 21.4833353907291,
+            "alarm_rate": 0.059110661348889815,
+            "q_source": 0.03954550623893738,
+            "d_mean": 0.4125211969663765
+          },
+          "shiftband_a0.05": {
+            "range_precision": 0.5166163141993958,
+            "range_recall": 0.1284748309541698,
+            "range_f1": 0.2057761732851986,
+            "coverage": 0.9625175698891145,
+            "abs_coverage_gap": 0.012517569889114566,
+            "empirical_fpr_at_alpha": 0.03748243011088552,
+            "inflation": 21.80773763399487,
+            "alarm_rate": 0.059110661348889815,
+            "q_source": 0.03954550623893738,
+            "d_mean": 0.4125211969663765
+          },
+          "mondrian_a0.05": {
+            "range_precision": 0.7727674624226348,
+            "range_recall": 0.21888304532932631,
+            "range_f1": 0.34113973458235747,
+            "coverage": 0.9799312822114634,
+            "abs_coverage_gap": 0.02993128221146346,
+            "empirical_fpr_at_alpha": 0.020068717788536625,
+            "inflation": 27.289647058945345,
+            "alarm_rate": 0.0673254360378594,
+            "q_source": 0.03954550623893738,
+            "d_mean": 0.4125211969663765,
+            "mondrian_per_bin_fpr": {
+              "0": 0.023500988359323523,
+              "1": 0.02286453839516825,
+              "2": 0.012164777439867294
+            }
+          },
+          "static_a0.1": {
+            "range_precision": 0.9482636428065202,
+            "range_recall": 0.3350864012021037,
+            "range_f1": 0.4951887490747595,
+            "coverage": 0.9942995470873028,
+            "abs_coverage_gap": 0.09429954708730282,
+            "empirical_fpr_at_alpha": 0.005700452912697173,
+            "inflation": 1.0,
+            "alarm_rate": 0.08399309482707304,
+            "q_source": 0.02393059991300106,
+            "d_mean": 0.4125211969663765
+          },
+          "aci_a0.1": {
+            "range_precision": 0.41366325981710594,
+            "range_recall": 0.1925870272977711,
+            "range_f1": 0.2628161312371839,
+            "coverage": 0.9148836482898641,
+            "abs_coverage_gap": 0.014883648289864104,
+            "empirical_fpr_at_alpha": 0.08511635171013587,
+            "inflation": 20.250944290045254,
+            "alarm_rate": 0.11066134888981487,
+            "q_source": 0.02393059991300106,
+            "d_mean": 0.4125211969663765
+          },
+          "shiftband_a0.1": {
+            "range_precision": 0.41420118343195267,
+            "range_recall": 0.1928374655647383,
+            "range_f1": 0.2631578947368421,
+            "coverage": 0.9149617366859285,
+            "abs_coverage_gap": 0.014961736685928484,
+            "empirical_fpr_at_alpha": 0.08503826331407154,
+            "inflation": 19.153839784126284,
+            "alarm_rate": 0.11066134888981487,
+            "q_source": 0.02393059991300106,
+            "d_mean": 0.4125211969663765
+          },
+          "mondrian_a0.1": {
+            "range_precision": 0.5426008968609866,
+            "range_recall": 0.2727272727272727,
+            "range_f1": 0.363,
+            "coverage": 0.9283148524129314,
+            "abs_coverage_gap": 0.028314852412931413,
+            "empirical_fpr_at_alpha": 0.07168514758706857,
+            "inflation": 16.355480673793895,
+            "alarm_rate": 0.11947139710697065,
+            "q_source": 0.02393059991300106,
+            "d_mean": 0.4125211969663765,
+            "mondrian_per_bin_fpr": {
+              "0": 0.07291895453547112,
+              "1": 0.07506471095772217,
+              "2": 0.06580038706110036
+            }
+          },
+          "static_a0.2": {
+            "range_precision": 0.5205954323001631,
+            "range_recall": 0.6393688955672426,
+            "range_f1": 0.573901315050017,
+            "coverage": 0.8164141808527253,
+            "abs_coverage_gap": 0.01641418085272528,
+            "empirical_fpr_at_alpha": 0.1835858191472747,
+            "inflation": 1.0,
+            "alarm_rate": 0.2919221382225132,
+            "q_source": 0.014835878275334835,
+            "d_mean": 0.4125211969663765
+          },
+          "aci_a0.2": {
+            "range_precision": 0.3448951048951049,
+            "range_recall": 0.30879038317054847,
+            "range_f1": 0.3258456659619451,
+            "coverage": 0.8171169764173044,
+            "abs_coverage_gap": 0.017116976417304364,
+            "empirical_fpr_at_alpha": 0.18288302358269562,
+            "inflation": 21.064348244380096,
+            "alarm_rate": 0.21281028632656707,
+            "q_source": 0.014835878275334835,
+            "d_mean": 0.4125211969663765
+          },
+          "shiftband_a0.2": {
+            "range_precision": 0.34611080022383883,
+            "range_recall": 0.3097921362384172,
+            "range_f1": 0.3269459495176424,
+            "coverage": 0.8175074183976261,
+            "abs_coverage_gap": 0.01750741839762604,
+            "empirical_fpr_at_alpha": 0.1824925816023739,
+            "inflation": 20.64345622510175,
+            "alarm_rate": 0.21275075897374843,
+            "q_source": 0.014835878275334835,
+            "d_mean": 0.4125211969663765
+          },
+          "mondrian_a0.2": {
+            "range_precision": 0.39860515021459225,
+            "range_recall": 0.37215126471324816,
+            "range_f1": 0.38492423261235587,
+            "coverage": 0.8249258160237389,
+            "abs_coverage_gap": 0.02492581602373889,
+            "empirical_fpr_at_alpha": 0.17507418397626112,
+            "inflation": 7.287475833182979,
+            "alarm_rate": 0.22191797130781593,
+            "q_source": 0.014835878275334835,
+            "d_mean": 0.4125211969663765,
+            "mondrian_per_bin_fpr": {
+              "0": 0.1706567098616297,
+              "1": 0.18054357204486626,
+              "2": 0.17362455073265137
+            }
+          },
+          "static_a0.3": {
+            "range_precision": 0.3500965043963114,
+            "range_recall": 0.8176809416478839,
+            "range_f1": 0.4902770478264134,
+            "coverage": 0.5267062314540059,
+            "abs_coverage_gap": 0.1732937685459941,
+            "empirical_fpr_at_alpha": 0.4732937685459941,
+            "inflation": 1.0,
+            "alarm_rate": 0.5551520923864516,
+            "q_source": 0.011382656171917915,
+            "d_mean": 0.4125211969663765
+          },
+          "aci_a0.3": {
+            "range_precision": 0.3090185676392573,
+            "range_recall": 0.4084648134234911,
+            "range_f1": 0.3518498543846403,
+            "coverage": 0.7152116195533345,
+            "abs_coverage_gap": 0.015211619553334499,
+            "empirical_fpr_at_alpha": 0.2847883804466656,
+            "inflation": 20.17981128534929,
+            "alarm_rate": 0.3141853681766772,
+            "q_source": 0.011382656171917915,
+            "d_mean": 0.4125211969663765
+          },
+          "shiftband_a0.3": {
+            "range_precision": 0.3095147839272176,
+            "range_recall": 0.4089656899574255,
+            "range_f1": 0.3523573200992556,
+            "coverage": 0.7155239731375918,
+            "abs_coverage_gap": 0.015523973137591796,
+            "empirical_fpr_at_alpha": 0.28447602686240825,
+            "inflation": 19.705315144847003,
+            "alarm_rate": 0.3140663134710399,
+            "q_source": 0.011382656171917915,
+            "d_mean": 0.4125211969663765
+          },
+          "mondrian_a0.3": {
+            "range_precision": 0.35079306528956106,
+            "range_recall": 0.4763335837716003,
+            "range_f1": 0.40403611258629846,
+            "coverage": 0.7251288458535061,
+            "abs_coverage_gap": 0.025128845853506165,
+            "empirical_fpr_at_alpha": 0.2748711541464938,
+            "inflation": 4.114680392636501,
+            "alarm_rate": 0.3227573069825585,
+            "q_source": 0.011382656171917915,
+            "d_mean": 0.4125211969663765,
+            "mondrian_per_bin_fpr": {
+              "0": 0.266857017351197,
+              "1": 0.2786885245901639,
+              "2": 0.28006635333149016
+            }
+          }
+        },
+        "elapsed_sec": 68.71345448493958
+      }
+    }
+  },
+  "diag_corr": [
+    {
+      "alpha": 0.05,
+      "pearson": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    {
+      "alpha": 0.1,
+      "pearson": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    {
+      "alpha": 0.2,
+      "pearson": NaN,
+      "p": NaN,
+      "n": 0
+    },
+    {
+      "alpha": 0.3,
+      "pearson": NaN,
+      "p": NaN,
+      "n": 0
+    }
+  ]
+}

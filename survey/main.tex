@@ -1,0 +1,35 @@
+% Survey — main file (IEEEtran journal style)
+\documentclass[journal]{IEEEtran}
+\input{math_commands}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{figures/}}
+
+\title{A Survey of Cross-Domain Industrial Time-Series Anomaly Detection:\\ Transfer Mechanisms, Calibration, and Evaluation}
+
+\author{Hu~Lingyan and Zhu~Jibiao
+\thanks{The authors are with the School of Electronic and Electrical Engineering, Shanghai University of Engineering Science, Shanghai, China.}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Industrial anomaly detection models are routinely trained on one operating domain and deployed on another---across machines, plants, and industries. This survey organizes the fast-growing literature on \emph{cross-domain industrial time-series anomaly detection} around three questions: how transfer is achieved (feature alignment, frequency-aware invariance, test-time adaptation, foundation models, sensor-relation structure), how the deployment \emph{threshold} is made reliable (conformal prediction and its adaptive variants), and how such systems are evaluated (metrics, protocol pitfalls, and the point-adjustment debate). We compile a reference corpus, tabulate the public datasets and benchmarks that support the field, and annotate recurring negative results---distribution-free calibration can be decoupled from ranking quality, several widely used benchmarks admit below-chance rankings under their labeling protocols, and simple reconstruction models remain competitive with foundation models on shifted industrial data. We close with open problems: conditional coverage under domain shift, alarm-budget-aware calibration, real mining and process-industry benchmarks, and the need for evaluation standards.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Anomaly detection, distribution shift, industrial time series, transfer learning, conformal prediction, calibration, evaluation.
+\end{IEEEkeywords}
+
+\input{sections/introduction}
+\input{sections/transfer}
+\input{sections/calibration}
+\input{sections/evaluation}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

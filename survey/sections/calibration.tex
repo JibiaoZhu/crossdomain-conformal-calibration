@@ -1,0 +1,34 @@
+\section{Reliability and Calibration}
+\label{sec:calibration}
+
+A detector that outputs scores is not yet a monitor; something must turn scores into alarms. This section surveys the machinery that makes the \emph{threshold} reliable, and the failure modes specific to cross-domain deployment.
+
+\subsection{Conformal Prediction Foundations}
+Split conformal prediction turns any score into a threshold with finite-sample marginal coverage on exchangeable data \cite{lei2018}. Exchangeability fails for time series (serial dependence) and, more severely, for cross-domain deployment (the target is a different population). The conformal time-series literature addresses the first failure: sequential predictive conformal inference \cite{2212_03463}, copula- and kernel-based multi-step variants \cite{2212_03281,2405_16828}, decomposition-aware calibration \cite{2406_16766}, joint adaptive region estimation \cite{2407_06390}, normalizing-flow and modern-Hopfield calibration \cite{2502_05709,2303_12783}, relational calibration for correlated series \cite{2502_09443}, and change-point-aware and deep-sequence variants \cite{2509_02844,2610_02357,2609_33868}. Adaptive conformal inference (ACI) replaces exchangeability with online feedback and gives long-run coverage under arbitrary dependence \cite{aci2021}; multiplicative/additive update rules \cite{dtaci2022} and PID-control formulations \cite{conformalpid2023} refine its dynamics. Extreme-value thresholding is the classical streaming alternative, controlling tail exceedance with a generalized-Pareto fit \cite{siffer2017}.
+
+\subsection{Calibration Under Domain (Not Just Temporal) Shift}
+Cross-domain calibration is much less studied than cross-time calibration. The relevant questions are: does a source-calibrated threshold transfer at all; and what does it cost to force coverage on the target? Our six-fold, four-domain-family benchmarking study \cite{our_scc} answers both empirically: static source thresholds fail in \emph{both} directions across every fold (normal-window coverage spanning $0.18$--$0.999$ at a nominal $0.90$), while online ACI restores coverage to within $0.015$ on five of six folds at negligible cost; the transfer cost is measurable as interval inflation ($0.5\times$--$19\times$), though a band-spectral divergence statistic does not predict it. Two negative results from that study generalize beyond the specific benchmark: a divergence-shifted quantile adds nothing over plain ACI, and a divergence-conditioned (Mondrian) quantile is consistently slightly worse.
+
+\subsection{The Alarm-Budget Problem}
+Online conformal rules guarantee the \emph{stream-wide} alarm rate, not the normal-window false-positive rate; when anomalies are abundant and strongly separable, the budget is consumed by true anomalies and normal-window coverage over-shoots. This alarm-budget effect is the cross-domain calibration problem that single-domain studies rarely encounter, because anomaly prevalence in deployment differs from the calibrated regime. A normal-anchored variant \cite{our_scc}---updating the quantile only on likely-normal windows, with an exclusion threshold $\kappa q_t$---fixes the defect: detection rates on anomaly-rich folds rise several-fold at matched normal-window FPR, while anomaly-sparse folds recover plain ACI. Open theory questions remain (below).
+
+\subsection{Calibration Meets Foundation Models}
+Foundation-model forecasts can serve as nonconformity scores for conformal prediction \cite{2507_08858}, and retrieval-augmented or agent-based pipelines increasingly bundle scoring and calibration \cite{2506_02081}. Our benchmarking study contributes a caution that applies to every score producer, classical or foundation: \emph{calibration quality and ranking quality decouple}. Coverage can be restored even when the score ranks anomalies below chance---in which case the alarms are calibrated and useless. Deployments should therefore audit rankability (a feature-baseline AUROC suffices) before trusting any calibration layer.
+
+\begin{table}[t]
+\caption{Calibration methods for cross-domain deployment, with scope and known failure modes.}
+\label{tab:calibration}
+\centering
+\small
+\begin{tabular}{p{2.3cm}p{2.4cm}p{2.9cm}}
+\toprule
+Method family & Addresses & Known failure mode \\
+\midrule
+Static split conformal \cite{lei2018} & exchangeable data & fails under any cross-domain shift (both directions) \\
+EVT/tail fits \cite{siffer2017} & streaming, stationary tail & source-calibrated; inherits static failure \\
+ACI \cite{aci2021}, DtACI \cite{dtaci2022}, CP-PID \cite{conformalpid2023} & temporal drift, long-run rate & stream-level budget; over-covers when anomalies abundant \\
+Mondrian/conditional variants & subpopulation coverage & small feedback samples; no gain in cross-domain benchmarks \\
+NA-ACI (normal-anchored) & alarm-budget allocation under shift & assumes anomaly-pure exclusion tail; $\kappa$ trade-off \\
+\bottomrule
+\end{tabular}
+\end{table}
