@@ -6,7 +6,7 @@ Dear Editor,
 
 We submit for consideration the manuscript:
 
-**"Cross-Domain Industrial Anomaly Detection: When Static Thresholds Fail and Online Conformal Calibration Restores Coverage"**
+**"When Static Thresholds Fail: Online Conformal Calibration for Cross-Domain Industrial Anomaly Detection"**
 
 by Hu Lingyan, Zhu Jibiao (School of Electronic and Electrical Engineering, Shanghai University of Engineering Science, Shanghai, China).
 

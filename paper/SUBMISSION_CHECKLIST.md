@@ -20,7 +20,7 @@ Date: 2026-10-11
 - [x] Figures: vector PDF, embedded; referenced and discussed (Figs. 1-4)
 - [x] Tables: booktabs, referenced (Tables I-VIII)
 - [x] Bibliography: IEEEtran.bst; 18 entries; all cited keys resolved
-- [ ] Author block + affiliations + ORCID — **requires user input** (currently `Anonymous submission`)
+- [x] Author block + affiliations — signed version (single-blind per IEEE TIM); ORCID optional, pending user
 - [ ] Funding / acknowledgments / data-availability statement — placeholders to fill
 - [ ] Venue template overlay: confirm TIM-specific style file requirements on the portal (IEEEtran journal is standard)
 

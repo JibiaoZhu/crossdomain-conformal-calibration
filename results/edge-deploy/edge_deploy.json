@@ -1,0 +1,45 @@
+{
+  "host": {
+    "cpu": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+    "python": "3.12.8",
+    "torch": "2.6.0+cu124",
+    "ort": "1.31.0"
+  },
+  "train_s": 73.50181412696838,
+  "n_params": 78432,
+  "model_mb_fp32": 0.464386,
+  "model_mb_int8": 0.303005,
+  "ort_session_delta_mb": 8.716288000000077,
+  "export_max_abs_diff": 3.259629011154175e-09,
+  "ort_fp32_b1_us": 553.6999997275416,
+  "ort_fp32_b1_p95": 713.0299998152615,
+  "ort_int8_b1_us": 568.0499998561572,
+  "ort_int8_b1_p95": 715.5849995797324,
+  "ort_fp32_b64_ms": 5851.700000221172,
+  "ort_fp32_b64_us_per_win": 91.4328125034558,
+  "ort_int8_b64_ms": 5460.549999497744,
+  "ort_int8_b64_us_per_win": 85.32109374215224,
+  "torch_cpu_b1_us": 1108.4000002483663,
+  "spearman_int8_vs_fp32": 0.9985831496999034,
+  "score_max_abs_diff_int8": 0.015970706939697266,
+  "score_mean_abs_diff_int8": 0.0006886817864142358,
+  "metrics_torch_fp32": {
+    "gap": 0.009744990892531877,
+    "alarm": 0.10169400086318515,
+    "det": 0.11831656961355215
+  },
+  "metrics_onnx_fp32": {
+    "gap": 0.009744990892531877,
+    "alarm": 0.10169400086318515,
+    "det": 0.11831656961355215
+  },
+  "metrics_onnx_int8": {
+    "gap": 0.009471766848816038,
+    "alarm": 0.10169400086318515,
+    "det": 0.1179195341450503
+  },
+  "stream_demo_us_per_window": 612.6043796539307,
+  "stream_demo_n": 4000,
+  "resume_identical": true,
+  "stream_demo_alarm_rate": 0.09
+}

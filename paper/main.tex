@@ -1,17 +1,20 @@
 ﻿% SCC paper — main file
-% IEEE TIM submission draft (anonymous). If the IEEEtran class is unavailable in
+% IEEE TIM submission (single-blind per TIM policy; signed author block retained).
+% If the IEEEtran class is unavailable in
 % the local TeX distribution, swap in the official TIM template (same structure).
 \documentclass[journal]{IEEEtran}
 \input{math_commands}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
 \graphicspath{{figures/}}
 
-\title{Cross-Domain Industrial Anomaly Detection:\\
-When Static Thresholds Fail and Online Conformal Calibration Restores Coverage}
+\title{When Static Thresholds Fail: Online Conformal Calibration for\\
+Cross-Domain Industrial Anomaly Detection}
 
 \author{Hu~Lingyan and Zhu~Jibiao
 \thanks{Hu Lingyan and Zhu Jibiao are with the School of Electronic and Electrical Engineering, Shanghai University of Engineering Science, Shanghai, China.}%
@@ -21,7 +24,7 @@ When Static Thresholds Fail and Online Conformal Calibration Restores Coverage}
 \maketitle
 
 \begin{abstract}
-Industrial anomaly detectors are typically trained and calibrated on one operating domain, then deployed on another. We study what happens to the deployed \emph{decision threshold} under this cross-domain shift. Using six leave-one-group-out folds spanning semiconductor fabrication, wind, solar, and rotating-machinery monitoring at native sampling rates, we show that a static source-calibrated threshold fails in both directions at a nominal 0.90 normal-window coverage level: coverage ranges from $0.18$ (severe over-alarming) to $0.999$ (no alarms). An online adaptive conformal inference (ACI) layer restores coverage to within $0.015$ of nominal on five of six folds across four nominal levels, with bootstrap confidence intervals for the coverage gap of at most $0.02$; rolling-quantile and extreme-value baselines do not recover coverage. We then identify an \emph{alarm-budget defect}: ACI regulates the stream-level alarm rate, so on folds where anomalies are abundant and separable the budget is consumed by anomalies and normal-window coverage over-shoots. A normal-anchored variant (NA-ACI) that updates the quantile only on likely-normal windows removes the defect---detection rate on the machinery fold rises from $0.12$ to $0.72$ at matched normal-window FPR, and mean range-$F_1$ across folds improves from $0.26$ to $0.39$---while matching ACI on anomaly-sparse folds. Conditional (Mondrian) and divergence-shifted variants otherwise bring no measurable coverage gain, and a band-spectral divergence estimate does not predict the measured transfer cost (interval inflation $0.5\times$--$19\times$). Calibration and detection quality decouple: on two folds with below-chance score rankings, coverage remains controllable but alarms carry no detection utility---a caveat we state explicitly rather than hide behind the coverage numbers. We release the benchmark, labeling and injection protocols, and code, along with a deployment guideline.
+Industrial anomaly detectors are typically trained and calibrated on one operating domain, then deployed on another. We study what happens to the deployed \emph{decision threshold} under this cross-domain shift. Using six leave-one-group-out folds spanning semiconductor fabrication, wind, solar, and rotating-machinery monitoring at native sampling rates, we show that a static source-calibrated threshold fails in both directions at a nominal 0.90 normal-window coverage level: coverage ranges from $0.18$ (severe over-alarming) to $0.999$ (no alarms). An online adaptive conformal inference (ACI) layer restores coverage to within $0.015$ of nominal on five of six folds across four nominal levels, with bootstrap confidence intervals for the coverage gap of at most $0.02$; rolling-quantile and extreme-value baselines do not recover coverage, and the quantity ACI is entitled to regulate---the stream-wide alarm rate---tracks the nominal level on every fold (largest deviation $0.033$). We then identify an \emph{alarm-budget defect}: ACI regulates the stream-level alarm rate, so on folds where anomalies are abundant and separable the budget is consumed by anomalies and normal-window coverage over-shoots. A normal-anchored variant (NA-ACI) that updates the quantile only on likely-normal windows removes the defect---detection rate on the machinery fold rises from $0.12$ to $0.90$ (at $\kappa{=}3$) with essentially unchanged normal-window FPR ($0.090\!\to\!0.094$), and mean range-$F_1$ across folds improves from $0.26$ to $0.39$---while matching ACI on anomaly-sparse folds. Conditional (Mondrian) and divergence-shifted variants otherwise bring no measurable coverage gain, and a band-spectral divergence estimate does not predict the measured transfer cost (threshold inflation $0.5\times$--$19\times$). Calibration and detection quality decouple: on two folds with below-chance score rankings, coverage remains controllable but alarms carry no detection utility---a caveat we state explicitly rather than hide behind the coverage numbers. We release the benchmark, labeling and injection protocols, and code, along with a deployment guideline.
 \end{abstract}
 
 \begin{IEEEkeywords}
