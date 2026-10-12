@@ -1,0 +1,16 @@
+# LaTeX
+*.aux
+*.log
+*.blg
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.toc
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# OS
+Thumbs.db
+Desktop.ini
