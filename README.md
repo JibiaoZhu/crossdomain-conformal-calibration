@@ -4,7 +4,7 @@
 
 Companion code and manuscripts for **"When Static Thresholds Fail: Online Conformal Calibration for Cross-Domain Industrial Anomaly Detection"** (manuscript under review, IEEE Transactions on Instrumentation and Measurement).
 
-**This snapshot (v1.1.0)** — revision-round update: adds the title change, the NA-ACI proposition, target-side calibration baselines, fault-type decomposition, calibration-contamination and label-noise robustness, sensitivity/tracking/warm-up analyses, the edge-deployment study (ONNX/INT8/streaming), and a 135-paper companion survey overview.
+**This snapshot (v1.1.1)** pins the paper's citations to the v1.1.0 version DOI (`10.5281/zenodo.23321794`). The revision-round update: adds the title change, the NA-ACI proposition, target-side calibration baselines, fault-type decomposition, calibration-contamination and label-noise robustness, sensitivity/tracking/warm-up analyses, the edge-deployment study (ONNX/INT8/streaming), and a 135-paper companion survey overview.
 
 ## Headline findings
 
@@ -49,14 +49,15 @@ python code/run_edge_deploy.py     # ONNX export, INT8 quantization, CPU benchma
   author = {Hu, Lingyan and Zhu, Jibiao},
   year   = {2026},
   note   = {Manuscript under review; code and protocols archived at Zenodo},
-  doi    = {10.5281/zenodo.23321391}
+  doi    = {10.5281/zenodo.23321794}
 }
 ```
 
 ## Versions
 
 - `v1.0.0` — submission snapshot: DOI `10.5281/zenodo.23321392`
-- `v1.1.0` — revision-round update (this release); the concept DOI `10.5281/zenodo.23321391` always resolves to the latest version.
+- `v1.1.0` — revision-round update: DOI `10.5281/zenodo.23321794` (the version the manuscript cites)
+- `v1.1.1` — citation-pinning update (this release); the concept DOI `10.5281/zenodo.23321391` always resolves to the latest version.
 
 ## License
 
